@@ -5,10 +5,17 @@ Quick ricing instructions for me when I forget about everything I did (yes I kno
 ## Files
 
 - [/etc/ly/config.ini](config.ini)
+- [/etc/mkinitcpio.conf](mkinitcpio.conf)
 - [/etc/vconsole.conf](vconsole.conf)
 - [/home/andya/.bashrc](.bashrc)
+- [/home/andya/.config/kitty/kitty.conf](kitty.conf)
 - [/home/andya/kitty-gruvbox-theme/gruvbox_dark_hard.conf](gruvbox_dark_hard.conf)
-- [/home/andya/kitty/kitty.conf](kitty.conf)
+
+## General Config
+
+### kwallet-pam
+
+- I edited the `/etc/pam.d/ly` file to make it auto-login to kwallet
 
 ## Themes
 
@@ -35,6 +42,8 @@ Quick ricing instructions for me when I forget about everything I did (yes I kno
 ### Ly
 
 - I use [Ly](https://github.com/fairyglade/ly) as my window manager
+
+- First, add `sd-color` to `mkinitcpio.conf`
 
 - I use custom colors using [mkinitcpio-colors](https://github.com/evanpurkhiser/mkinitcpio-colors) by adding colors to `vconsole.conf`
 

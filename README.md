@@ -6,20 +6,32 @@ Quick ricing instructions for me when I forget about everything I did (yes I kno
 
 - [/etc/ly/config.ini](config.ini)
 - [/etc/mkinitcpio.conf](mkinitcpio.conf)
+- [/etc/pam.d/ly](ly)
 - [/etc/vconsole.conf](vconsole.conf)
 - [/home/andya/.bashrc](.bashrc)
 - [/home/andya/.config/kitty/kitty.conf](kitty.conf)
 - [/home/andya/kitty-gruvbox-theme/gruvbox_dark_hard.conf](gruvbox_dark_hard.conf)
 
+- [mytheme.crx](mytheme.crx)
+- [nightTab dark grey blue.json](nightTab%20dark%20grey%20blue.json)
+
 ## General Config
 
 ### kwallet-pam
 
-- I edited the `/etc/pam.d/ly` file to make it auto-login to kwallet
+- I edited the [/etc/pam.d/ly](ly) file to make it auto-login to kwallet
 
 ## Themes
 
-## Cursor
+### Chrome Theme
+
+- Inside the `Extensions` section of the Chrome Settings, hit `Developer Mode` and drag the theme on-screen
+
+### nightTab
+
+- Import the [nightTab dark grey blue.json](nightTab%20dark%20grey%20blue.json) file
+
+### Cursor
 
 - I use Posy's Cursor pack
 

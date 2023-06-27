@@ -1,4 +1,4 @@
-# KDE-Customization
+# Ricing
 
 Quick ricing instructions for me when I forget about everything I did (yes I know its pretty mild, I just don't want to have to restart everything from memory on a reinstall)
 

@@ -10,7 +10,7 @@
    "theme": {
       "colors": {
          "bookmark_text": [ 255, 255, 255 ],
-         "frame": [ 45, 45, 45 ],
+         "frame": [ 32, 32, 32 ],
          "frame_inactive": [ 45, 45, 45 ],
          "ntp_background": [ 0, 0, 0 ],
          "ntp_text": [ 255, 255, 255 ],

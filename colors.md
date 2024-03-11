@@ -1,4 +1,0 @@
-# System Colors
-
-## Default
-

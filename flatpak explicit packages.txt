@@ -1,0 +1,4 @@
+com.google.AndroidStudio
+com.heroicgameslauncher.hgl
+com.usebottles.bottles
+com.valvesoftware.Steam

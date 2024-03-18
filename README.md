@@ -1,13 +1,6 @@
+# dotfiles
+
 backups of some of my dotfiles with notes for when I forget what I did (which happens pretty often)
-
-## dotfiles
-
-- [/etc/ly/config.ini](config.ini)
-- [~/.config/kitty/kitty.conf](kitty.conf)
-- [/etc/pam.d/ly](ly)
-- [/etc/mkinitcpio.conf](mkinitcpio.conf)
-- [/etc/vconsole.conf](vconsole.conf)
-- [~/.zshrc](.zshrc)
 
 ## notes
 

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # copy the dotfiles
-cp ~/.zshrc ./
+cp ~/.zshrc ./".zshrc archlinux"
 
 cp /etc/ly/config.ini ./
 

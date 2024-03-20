@@ -13,6 +13,8 @@ cp /etc/vconsole.conf ./
 
 cp ~/.config/kitty/kitty.conf ./
 
+cp ~/.config/ncspot/config.toml ./
+
 # save my explicitly installed packages
 
 pacman -Qe | awk '{print $1}' > "pacman explicit packages.txt"

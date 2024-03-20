@@ -6,6 +6,7 @@ libxft
 libxmu
 maven
 micro
+ncspot
 neofetch
 node
 octave
@@ -37,6 +38,7 @@ macfuse
 mullvadvpn
 obsidian
 protonmail-bridge
+psst
 qbittorrent
 spotify
 steam

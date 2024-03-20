@@ -1,0 +1,12 @@
+library_tabs = ["playlists", "albums", "artists", "tracks", "browse"]
+use_nerdfont = true
+volnorm = true
+shuffle = true
+repeat = "playlist"
+
+statusbar_format = "%title | %artists"
+
+[track_format]
+left = "%title"
+center = "%artists | %album"
+right = "%duration"

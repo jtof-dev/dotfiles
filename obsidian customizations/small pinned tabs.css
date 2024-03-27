@@ -1,0 +1,16 @@
+.mod-root .workspace-tab-header:has(.mod-pinned) {
+    --tab-max-width: 35px;
+}
+
+.workspace-tab-header-status-icon.mod-pinned {
+    display: none;
+}
+
+.mod-root .workspace-tab-header:not(:has(.mod-pinned)) .workspace-tab-header-inner-icon {
+	display: none !important;
+}
+
+.mod-root .workspace-tab-header:has(.mod-pinned) .workspace-tab-header-inner-icon {
+    padding-right: 0px;
+    transform: scale(1.2);
+}

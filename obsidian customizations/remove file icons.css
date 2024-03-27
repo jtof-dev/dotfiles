@@ -1,0 +1,7 @@
+.tree-item .iconize-icon {
+    display: none;
+}
+
+.workspace-leaf-content:has(.bookmark) .tree-item-icon {
+    display: none;
+}

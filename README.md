@@ -25,6 +25,7 @@ if I want to add custom colors to `ly`:
 - to set everything up, run some combination of the following:
 
 ```
+spicetify backup apply
 spicetify config inject_css 1
 spicetify config replace_colors 1
 spicetify config current_theme marketplace

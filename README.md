@@ -18,12 +18,6 @@ if I want to add custom colors to `ly`:
 
   - to add the colors to `initramfs`, I used `sudo mkinitcpio -p linux-zen`
 
-### dotfiles.sh
-
-- the [dotfiles.sh](dotfiles.sh) bash script will copy in the dotfiles tracked by this repo, and dump a list of all my explicitly installed packages
-
-- call it with `bash dotfiles.sh` from the repo root folder
-
 ### spicetify
 
 - spicetify is very nice to have, but an absolute nightmare to install for the first time. for my own ease of use, I am including a copy of the `.config/spicetify` directory

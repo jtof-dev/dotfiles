@@ -1,21 +1,6 @@
 #!/bin/bash
 
-# copy the dotfiles
 cp ~/.zshrc ./".zshrc archlinux"
-
-cp /etc/ly/config.ini ./
-
-cp /etc/mkinitcpio.conf ./
-
-cp /etc/pam.d/ly ./
-
-cp /etc/vconsole.conf ./
-
-cp ~/.config/kitty/kitty.conf ./
-
-cp ~/.config/ncspot/config.toml ./
-
-# save my explicitly installed packages
 
 pacman -Qe | awk '{print $1}' > "pacman explicit packages.txt"
 

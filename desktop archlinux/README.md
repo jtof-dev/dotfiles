@@ -14,6 +14,14 @@ if I want to add custom colors to `ly`:
 
   - to add the colors to `initramfs`, I used `sudo mkinitcpio -p linux-zen`
 
+## steam console settings
+
+- `steam_dev.cfg` is a file that stores custom dev console settings that steam uses at launch
+
+- this file is located at `~/.var/app/com.valvesoftware.Steam/.steam/steam/steam_dev.cfg`
+
+- [source](https://www.reddit.com/r/linux_gaming/comments/16e1l4h/slow_steam_downloads_try_this/) 
+
 ## `dotfiles.sh`
 
 - this script dumps all my explicitly installed programs across all package managers I use, and copies over my current `.zshrc`

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cp ~/.zshrc ./".zshrc archlinux"
+cp ~/.zshrc ./
 
 pacman -Qe | awk '{print $1}' > "pacman explicit packages.txt"
 

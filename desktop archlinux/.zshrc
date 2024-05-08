@@ -39,10 +39,11 @@ alias mvc='mullvad connect'
 alias mvd='mullvad disconnect'
 alias mvs='mullvad status'
 
-alias up='w3m archlinux.org && echo -e "\nPacman and AUR update\n----------------------\n" && yay -Syu && echo -e "\nFlatpak update\n---------------\n" && flatpak update && echo "\nDone!" ' # && echo -e "\nAppImage update" && echo -e "---------------" && am -u && echo "Done!" '
-alias qup='echo -e "\nPacman and AUR update\n----------------------\n" && yay -Syu && echo -e "\nFlatpak update\n---------------\n" && flatpak update && echo "\nDone!" ' # && echo -e "\nAppImage update" && echo -e "---------------" && am -u && echo "Done!" '
+alias up='w3m archlinux.org && echo -e "\nPacman and AUR update\n----------------------\n" && yay -Syu && echo -e "\nFlatpak update\n---------------\n" && flatpak update && echo -e "\nAppImage update" && echo -e "---------------" && am -u && echo "Done!" '
+alias qup='echo -e "\nPacman and AUR update\n----------------------\n" && yay -Syu && echo -e "\nFlatpak update\n---------------\n" && flatpak update && echo "\nDone!" && echo -e "\nAppImage update" && echo -e "---------------" && am -u && echo "Done!" '
 alias cl='yay -Sc && pacman -Qtdq | sudo ifne pacman -Rns - && echo -e "\nDone!" '
 alias vu='sh -c "$(curl -sS https://raw.githubusercontent.com/Vendicated/VencordInstaller/main/install.sh)"'
+alias kr='bash scripts/restart\ kde.sh'
 
 alias ufw='sudo ufw'
 

@@ -20,3 +20,9 @@ spicetify apply
 ```
 
 - which should, theoretically, work. though, I'm not sure if this will sync over snippets, since I am `gitignore`ing the `Backup` and `Extracted` folders
+
+## spicetify update script
+
+- used to keep all the custom apps up to date
+
+- place the `customapps update.sh` script in `~/.config/spicetify/CustomApps`, and run with `source customapps\ update.sh` from inside the `CustomApps` folder

@@ -1,3 +1,9 @@
+# mbp t2 archlinux
+
+- I found some old, thorough notes to self that I wrote after successfully installing arch linux on my macbook. since they are still somewhat accurate, there is no reason to delete them, so here they are
+
+## initial install
+
 - Boot into Recovery Mode
 	- Completely wipe the disk (can do this from an external linux image if necessary)
 	- Reinstall MacOS from cloud
@@ -13,6 +19,9 @@
 ```
 pacstrap /mnt base base-devel tar wget curl zsync grep git eza nano vim micro zip flatpak zsh tlp tlp-rdw nerd-fonts-meta man-db networkmanager wpa_supplicant htop docker docker-compose firefox kitty ly
 ```
+
+## first boot
+
 - After booting successfully:
 ```
 pacman -Syu
@@ -31,6 +40,9 @@ am -i etcher
 am -i slippi
 am -i qbittorrent
 ```
+
+## outdated theming instructions
+
 - [Kitty theme](https://github.com/catppuccin/kitty/tree/main)
 - Install universal Candy theme from KDE Theme store
 - Replace default cursor with [Posy's Cursor](https://github.com/simtrami/posy-improved-cursor-linux)

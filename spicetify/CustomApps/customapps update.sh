@@ -3,7 +3,7 @@
 # betterLibrary
 
 if [ -d "betterLibrary" ]; then
-    rm -r betterLibrary
+    sudo rm -r betterLibrary
 fi
 
 git clone https://github.com/Sowgro/betterLibrary.git

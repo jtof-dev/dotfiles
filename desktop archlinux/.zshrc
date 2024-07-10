@@ -16,19 +16,47 @@ compinit
 eval "$(starship init zsh)"
 
 # aliases
+
+# filesystem
 alias grep='grep --color=auto'
 alias ls='exa -a --icons'
 alias lsl='exa -la --icons'
 alias lo='locate'
 alias cdd='cd ..'
-alias cddd='cd .. && cd ..'
-alias cdw='cd ~/Work'
+alias cddd='cd ../..'
+alias cdddd='cd ../../..'
+alias rm='trash'
+alias fastfetch='fastfetch -c .config/fastfetch/fastfetch.jsonc'
+alias ff='fastfetch'
+alias ufw='sudo ufw'
+
+# package management
 alias pacman='sudo pacman'
-alias code='codium'
+alias pas='pacman -S'
+alias par='pacman -R'
+alias yas='yay -S'
+alias yar='yay -R'
+alias up='newsboat -r && echo -e "\nPacman and AUR update\n----------------------\n" && yay -Syu && echo -e "\nFlatpak update\n---------------\n" && flatpak update && echo -e "\nAppImage update" && echo -e "---------------" && am -u && echo "Done!" '
+alias qup='echo -e "\nPacman and AUR update\n----------------------\n" && yay -Syu && echo -e "\nFlatpak update\n---------------\n" && flatpak update && echo "\nDone!" && echo -e "\nAppImage update" && echo -e "---------------" && am -u && echo "Done!" '
+alias cl='yay -Sc && pacman -Qtdq | sudo ifne pacman -Rns - && echo -e "\nDone!" '
+
+# text editors
+alias co='codium'
+alias sco='sudo codium'
 alias mi='micro'
 alias smi='sudo micro'
+alias na='nano'
 alias sna='sudo nano'
+alias nv='nvim'
+alias snv='sudo nvim'
+alias svim='sudo vim'
 
+# scripting
+alias vu='sh -c "$(curl -sS https://raw.githubusercontent.com/Vendicated/VencordInstaller/main/install.sh)"'
+alias kr='kquitapp6 plasmashell && kstart plasmashell'
+alias sz='source ~/.zshrc'
+
+# misc
 alias docker='sudo docker'
 alias docker-compose='sudo docker-compose'
 alias docu='docker-compose up'
@@ -39,19 +67,14 @@ alias mvc='mullvad connect'
 alias mvd='mullvad disconnect'
 alias mvs='mullvad status'
 
-alias up='w3m archlinux.org && echo -e "\nPacman and AUR update\n----------------------\n" && yay -Syu && echo -e "\nFlatpak update\n---------------\n" && flatpak update && echo -e "\nAppImage update" && echo -e "---------------" && am -u && echo "Done!" '
-alias qup='echo -e "\nPacman and AUR update\n----------------------\n" && yay -Syu && echo -e "\nFlatpak update\n---------------\n" && flatpak update && echo "\nDone!" && echo -e "\nAppImage update" && echo -e "---------------" && am -u && echo "Done!" '
-alias cl='yay -Sc && pacman -Qtdq | sudo ifne pacman -Rns - && echo -e "\nDone!" '
-alias vu='sh -c "$(curl -sS https://raw.githubusercontent.com/Vendicated/VencordInstaller/main/install.sh)"'
-alias kr='bash scripts/restart\ kde.sh'
-
-alias ufw='sudo ufw'
-
 # exports
 export STARSHIP_CONFIG=~/.config/starship.toml
 export PATH=$PATH:/home/andya/.spicetify
 export PATH="$PATH:/home/andya/.cargo/bin"
-export EDITOR=/sbin/micro
+export PATH="/usr/local/cuda-12.4/bin${PATH:+:${PATH}}"
+export "LD_LIBRARY_PATH=/usr/local/cuda-12.4/lib64\
+                         ${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}"
+export EDITOR=/sbin/nvim
 
 # hypetrigger .bashrc dependancies
 PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig
@@ -67,3 +90,7 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+# zoxide setup 🤮
+eval "$(zoxide init zsh)"
+export _ZO_DATA_DIR="$HOME/.local/share"

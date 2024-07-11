@@ -1,3 +1,5 @@
+/sbin/fastfetch -c ~/.config/fastfetch/startup.jsonc 
+
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
 HISTSIZE=1000
@@ -26,7 +28,7 @@ alias cdd='cd ..'
 alias cddd='cd ../..'
 alias cdddd='cd ../../..'
 alias rm='trash'
-alias fastfetch='fastfetch -c .config/fastfetch/fastfetch.jsonc'
+alias fastfetch='/sbin/fastfetch -c ~/.config/fastfetch/fastfetch.jsonc'
 alias ff='fastfetch'
 alias ufw='sudo ufw'
 
@@ -66,6 +68,7 @@ alias ocli='octave --no-gui'
 alias mvc='mullvad connect'
 alias mvd='mullvad disconnect'
 alias mvs='mullvad status'
+alias lg='lazygit'
 
 # exports
 export STARSHIP_CONFIG=~/.config/starship.toml

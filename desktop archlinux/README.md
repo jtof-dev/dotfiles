@@ -20,8 +20,8 @@ if I want to add custom colors to `ly`:
 
 - this file is located at `~/.var/app/com.valvesoftware.Steam/.steam/steam/steam_dev.cfg`
 
-- [source](https://www.reddit.com/r/linux_gaming/comments/16e1l4h/slow_steam_downloads_try_this/) 
+- [source](https://www.reddit.com/r/linux_gaming/comments/16e1l4h/slow_steam_downloads_try_this/)
 
-## `dotfiles.sh`
+## `packages.sh`
 
 - this script dumps all my explicitly installed programs across all package managers I use, and copies over my current `.zshrc`

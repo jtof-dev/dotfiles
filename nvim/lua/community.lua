@@ -16,5 +16,7 @@ return {
   { import = "astrocommunity.media.image-nvim" },
   { import = "astrocommunity.markdown-and-latex.glow-nvim" },
   -- { import = "astrocommunity.lsp.lsp-lens-nvim" },
+  { import = "astrocommunity.colorscheme.vscode-nvim" },
+  { import = "astrocommunity.colorscheme.cyberdream-nvim" },
   -- import/override with your plugins folder
 }

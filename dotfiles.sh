@@ -8,4 +8,6 @@ cp ~/.config/spicetify/CustomApps/customapps\ update.sh ./spicetify/CustomApps/
 
 cp -r ~/.config/kitty ./
 
+cp ~/.config/starship.toml ./
+
 

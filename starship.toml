@@ -11,16 +11,17 @@ $python\
 $character"""
 
 [directory]
-style = "yellow"
+style = "purple"
+truncation_length = 10
 
 [character]
-success_symbol = "[❯](purple)"
-error_symbol = "[❯](purple)"
-vimcmd_symbol = "[❮](green)"
+success_symbol = "[❯](cyan)"
+error_symbol = "[❯](cyan)"
+vimcmd_symbol = "[❮](cyan)"
 
 [git_branch]
 format = "[$branch]($style)"
-style = "bright-black"
+style = "bold-white"
 
 [git_status]
 format = "[[(*$conflicted$untracked$modified$staged$renamed$deleted)](218) ($ahead_behind$stashed)]($style)"
@@ -35,11 +36,10 @@ stashed = "≡"
 
 [git_state]
 format = '\([$state( $progress_current/$progress_total)]($style)\) '
-style = "bright-black"
+style = "bold-white"
 
 [cmd_duration]
 disabled = true
 
 [python]
-format = "[$virtualenv]($style) "
-style = "bright-black"
+disabled = true

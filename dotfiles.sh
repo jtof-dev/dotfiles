@@ -10,6 +10,6 @@ cp ~/.config/kitty/kitty.conf ./
 
 cp ~/.config/starship.toml ./
 
-cp ~/.config/zellij/config.kdl ./
+cp -r ~/.config/zellij ./
 
 cp ~/.tmux.conf ./

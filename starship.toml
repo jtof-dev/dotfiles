@@ -11,13 +11,13 @@ $python\
 $character"""
 
 [directory]
-style = "purple"
+style = "yellow"
 truncation_length = 10
 
 [character]
-success_symbol = "[❯](cyan)"
-error_symbol = "[❯](cyan)"
-vimcmd_symbol = "[❮](cyan)"
+success_symbol = "[❯](blue)"
+error_symbol = "[❯](blue)"
+vimcmd_symbol = "[❮](blue)"
 
 [git_branch]
 format = "[$branch]($style)"

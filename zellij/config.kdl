@@ -1,10 +1,8 @@
-// misc
-pane_frames false 
 
 // colors
 themes {
     cyberdream {
-        bg "picom"
+        bg "#202020"
         fg "#ffffff"
         black "#7b8496"
         red "#ff6e5e"
@@ -19,9 +17,3 @@ themes {
 }
 
 theme "cyberdream"
-
-default_layout "custom_layout"
-
-// simplified_ui true
-// default_mode "locked"
-

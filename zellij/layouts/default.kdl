@@ -1,0 +1,21 @@
+layout {
+    pane size=1 borderless=true {
+        plugin location="file:~/.config/zellij/zjstatus/zjstatus.wasm" {
+            hide_frame_for_single_pane "true"
+
+            format_left  "#[fg=#3c4048]{tabs}#[fg=#3c4048]"
+            format_right "#[fg=#3c4048]#[bg=#3c4048] #[fg=#ffffff,bg=#3c4048,bold]{session}#[bg=#3c4048] #[fg=#3c4048]"
+
+            mode_normal          "#[fg=#5ea1ff]#[bg=#5ea1ff] "
+            mode_tmux            "#[fg=#fbd5e] "
+            mode_default_to_mode "tmux"
+
+            tab_normal               "#[fg=#ffbd5e,bg=#3c4048] {index}#[fg=#ffffff,bg=#3c4048] {name} {fullscreen_indicator}{sync_indicator}{floating_indicator}"
+            tab_active               "#[fg=#5ea1ff,bg=#3c4048,bold,italic] {index}#[fg=#ffffff,bg=#3c4048] {name} {fullscreen_indicator}{sync_indicator}{floating_indicator}"
+            tab_fullscreen_indicator "□ "
+            tab_sync_indicator       "  "
+            tab_floating_indicator   "󰉈 "
+        }
+    }
+    pane
+}

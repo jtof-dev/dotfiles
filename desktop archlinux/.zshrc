@@ -86,6 +86,7 @@ export ZELLIJ_LAYOUT="~/.config/zellij"
 export ZELLIJ_AUTO_ATTACH="true"
 export _ZO_DATA_DIR="$HOME/.local/share"
 export STARSHIP_CONFIG=~/.config/starship.toml
+export DOTFILES_OS_CHECK="desktop_archlinux"
 
 # evals
 eval "$(zoxide init zsh)"

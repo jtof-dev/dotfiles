@@ -1,8 +1,7 @@
-
 // colors
 themes {
     cyberdream {
-        bg "#202020"
+        bg "#3c4048"
         fg "#ffffff"
         black "#7b8496"
         red "#ff6e5e"
@@ -17,3 +16,4 @@ themes {
 }
 
 theme "cyberdream"
+mouse_mode true

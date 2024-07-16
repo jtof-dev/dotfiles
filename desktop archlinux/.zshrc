@@ -1,4 +1,3 @@
-/sbin/fastfetch -c ~/.config/fastfetch/startup.jsonc 
 
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
@@ -15,7 +14,6 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-eval "$(starship init zsh)"
 
 # aliases
 
@@ -27,15 +25,19 @@ alias lo='locate'
 alias cdd='cd ..'
 alias cddd='cd ../..'
 alias cdddd='cd ../../..'
+alias zz='z ..'
+alias zzz='z ../..'
+alias zzzz='z ../../..'
 alias rm='trash'
 alias fastfetch='/sbin/fastfetch -c ~/.config/fastfetch/fastfetch.jsonc'
 alias ff='fastfetch'
 alias ufw='sudo ufw'
 
 # package management
-alias pacman='sudo pacman'
-alias pas='pacman -S'
-alias par='pacman -R'
+alias pacman='sudo /sbin/pacman'
+alias pa='sudo /sbin/pacman'
+alias pas='sudo /sbin/pacman -S'
+alias par='sudo /sbin/pacman -R'
 alias yas='yay -S'
 alias yar='yay -R'
 alias up='newsboat -r && echo -e "\nPacman and AUR update\n----------------------\n" && yay -Syu && echo -e "\nFlatpak update\n---------------\n" && flatpak update && echo -e "\nAppImage update" && echo -e "---------------" && am -u && echo "Done!" '
@@ -71,7 +73,6 @@ alias mvs='mullvad status'
 alias lg='lazygit'
 
 # exports
-export STARSHIP_CONFIG=~/.config/starship.toml
 export PATH=$PATH:/home/andya/.spicetify
 export PATH="$PATH:/home/andya/.cargo/bin"
 export PATH="/usr/local/cuda-12.4/bin${PATH:+:${PATH}}"
@@ -79,12 +80,18 @@ export "LD_LIBRARY_PATH=/usr/local/cuda-12.4/lib64\
                          ${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}"
 export EDITOR=/sbin/nvim
 
-# hypetrigger .bashrc dependancies
-PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig
-export PKG_CONFIG_PATH
-export LD_LIBRARY_PATH=/usr/local/lib
+export MOZ_ENABLE_WAYLAND=1
+export TERM=xterm-256color
+export ZELLIJ_LAYOUT="~/.config/zellij"
+export ZELLIJ_AUTO_ATTACH="true"
+export _ZO_DATA_DIR="$HOME/.local/share"
+export STARSHIP_CONFIG=~/.config/starship.toml
 
-source /usr/share/nvm/init-nvm.sh
+# evals
+eval "$(zoxide init zsh)"
+eval "$(starship init zsh)"
+
+# program specific setup
 
 # pnpm
 export PNPM_HOME="/home/andya/.local/share/pnpm"
@@ -92,8 +99,16 @@ case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
-# pnpm end
 
-# zoxide setup 🤮
-eval "$(zoxide init zsh)"
-export _ZO_DATA_DIR="$HOME/.local/share"
+# zellij auto-start
+if [[ -z "$ZELLIJ" ]]; then
+    if [[ "$ZELLIJ_AUTO_ATTACH" == "true" ]]; then
+        zellij attach -c
+    else
+        zellij
+    fi
+
+    if [[ "$ZELLIJ_AUTO_EXIT" == "true" ]]; then
+        exit
+    fi
+fi

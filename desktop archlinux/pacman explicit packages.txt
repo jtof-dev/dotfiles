@@ -7,11 +7,13 @@ ark
 audacity
 base
 base-devel
+bashtop
 bat
 betterbird-bin
 betterdiscordctl-git
 bottom
 brave-bin
+cbonsai
 certbot
 chromium
 clang
@@ -20,6 +22,7 @@ cuda
 cuda-tools
 cudnn
 dex
+difftastic
 discord
 dkms
 dnsmasq
@@ -36,13 +39,14 @@ etcher-bin
 eza
 fastfetch
 fd
+firefox
 flatpak
+floorp-bin
 fuse2
 gdu
 gimp
 git
 github-cli
-gitkraken
 glow
 gnome-disk-utility
 gnu-netcat
@@ -92,6 +96,7 @@ maven
 mesa-demos
 micro
 moreutils
+mtm-git
 mullvad-vpn
 nano
 ncspot
@@ -130,6 +135,7 @@ psst-git
 python-pipenv
 qbittorrent
 qemu-base
+qutebrowser
 rclone
 redis
 ripgrep
@@ -139,6 +145,8 @@ rpi-imager
 rsync
 rust
 rust-analyzer
+rust-wasm
+screen
 sddm
 signal-desktop
 slippi-launcher
@@ -187,6 +195,8 @@ xorg-xlsclients
 xterm
 yakuake
 yay
+yazi
+zellij
 zoom
 zoxide
 zram-generator

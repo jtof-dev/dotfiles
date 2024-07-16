@@ -3,16 +3,19 @@
 betterbird-bin
 betterdiscordctl-git
 brave-bin
+cbonsai
+cbonsai-debug
 cpu-x
 downgrade
 etcher-bin
-gitkraken
+floorp-bin
 grpcurl-bin
 gwe
 iriunwebcam-bin
 keystore-explorer-bin
 librespot
 lmstudio-appimage
+mtm-git
 mullvad-vpn
 ncurses5-compat-libs
 nvflash
@@ -27,6 +30,7 @@ python-pyfuse3
 rpcs3-bin
 slippi-launcher
 spicetify-cli
+spicetify-cli-debug
 spotify
 spotify-qt
 tor-browser-bin
@@ -37,7 +41,6 @@ usbimager
 veracrypt-git
 vesktop-bin
 vscodium-bin
-vscodium-bin-debug
 vscodium-bin-marketplace
 yay
 zoom

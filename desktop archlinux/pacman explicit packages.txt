@@ -39,6 +39,7 @@ etcher-bin
 eza
 fastfetch
 fd
+ffmpegthumbnailer
 firefox
 flatpak
 floorp-bin
@@ -155,6 +156,7 @@ spectacle
 spicetify-cli
 spotify
 spotify-qt
+spotify-tui
 sshfs
 starship
 tealdeer
@@ -167,6 +169,7 @@ ttf-montserrat
 tuxclocker
 ueberzugpp
 ufw
+unarchiver
 unzip
 usbimager
 veracrypt-git

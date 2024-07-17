@@ -18,6 +18,7 @@ lmstudio-appimage
 mtm-git
 mullvad-vpn
 ncurses5-compat-libs
+ncurses5-compat-libs-debug
 nvflash
 nvm
 official-gamecube-controller-adapter-rules
@@ -33,6 +34,8 @@ spicetify-cli
 spicetify-cli-debug
 spotify
 spotify-qt
+spotify-tui
+spotify-tui-debug
 tor-browser-bin
 turbo-base64
 tuxclocker

@@ -14,7 +14,7 @@ wget https://github.com/Bergbok/Spicetify-Creations/archive/refs/heads/dist/hist
 
 unzip -od history-in-sidebar history-in-sidebar.zip
 
-sudo rm history-in-sidebar.zip
+rm history-in-sidebar.zip
 
 # marketplace
 
@@ -22,7 +22,7 @@ wget https://github.com/spicetify/spicetify-marketplace/releases/latest/download
 
 unzip -od marketplace spicetify-marketplace.zip
 
-sudo rm spicetify-marketplace.zip
+rm spicetify-marketplace.zip
 
 # stats
 
@@ -30,7 +30,7 @@ wget $(curl -s https://github.com/harbassan/spicetify-apps/releases | grep -oP '
 
 unzip -od stats spicetify-stats.release.zip
 
-sudo rm spicetify-stats.release.zip
+rm spicetify-stats.release.zip
 
 # apply changes
 

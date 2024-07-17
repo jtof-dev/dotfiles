@@ -33,7 +33,7 @@ print(f"Desktop Environment: {dotfiles_os}")
 
 match dotfiles_os:
     case "desktop_archlinux":
-        command = "cd ~/git-repos/dotfiles/desktop\\ archlinux && ls && ./dotfiles.sh"
+        command = "cd ~/git-repos/dotfiles/desktop\\ archlinux && ./dotfiles.sh"
         run_bash_command(command)
     case "mbp_macos":
         command = "cd ~/git-repos/dotfiles/mbp\\ macos/ && ls && ./dotfiles.sh"

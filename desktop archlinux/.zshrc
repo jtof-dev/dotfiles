@@ -40,8 +40,8 @@ alias pas='sudo /sbin/pacman -S'
 alias par='sudo /sbin/pacman -R'
 alias yas='yay -S'
 alias yar='yay -R'
-alias up='newsboat -r && echo -e "\nPacman and AUR update\n----------------------\n" && yay -Syu && echo -e "\nFlatpak update\n---------------\n" && flatpak update && echo -e "\nAppImage update" && echo -e "---------------" && am -u && echo "Done!" '
-alias qup='echo -e "\nPacman and AUR update\n----------------------\n" && yay -Syu && echo -e "\nFlatpak update\n---------------\n" && flatpak update && echo "\nDone!" && echo -e "\nAppImage update" && echo -e "---------------" && am -u && echo "Done!" '
+alias up='newsboat -r && echo -e "\nPacman and AUR update\n----------------------\n" && yay -Syu && echo -e "\nFlatpak update\n---------------\n" && flatpak update && echo "\nDone!" '
+alias qup='echo -e "\nPacman and AUR update\n----------------------\n" && yay -Syu && echo -e "\nFlatpak update\n---------------\n" && flatpak update && echo "\nDone!" '
 alias cl='yay -Sc && pacman -Qtdq | sudo ifne pacman -Rns - && echo -e "\nDone!" '
 
 # text editors
@@ -81,7 +81,7 @@ export "LD_LIBRARY_PATH=/usr/local/cuda-12.4/lib64\
 export EDITOR=/sbin/nvim
 
 export MOZ_ENABLE_WAYLAND=1
-export TERM=xterm-256color
+# export TERM=xterm-256color
 export ZELLIJ_LAYOUT="~/.config/zellij"
 export ZELLIJ_AUTO_ATTACH="true"
 export _ZO_DATA_DIR="$HOME/.local/share"
@@ -101,7 +101,7 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 
-# zellij auto-start
+# zellij
 if [[ -z "$ZELLIJ" ]]; then
     if [[ "$ZELLIJ_AUTO_ATTACH" == "true" ]]; then
         zellij attach -c
@@ -113,3 +113,50 @@ if [[ -z "$ZELLIJ" ]]; then
         exit
     fi
 fi
+
+function current_dir() {
+    local current_dir=$PWD
+    if [[ $current_dir == $HOME ]]; then
+        current_dir="~"
+    else
+        current_dir=${current_dir##*/}
+    fi
+    
+    echo $current_dir
+}
+
+function change_tab_title() {
+    local title=$1
+    command nohup zellij action rename-tab $title >/dev/null 2>&1
+}
+
+function set_tab_to_working_dir() {
+    local result=$?
+    local title=$(current_dir)
+    # uncomment the following to show the exit code after a failed command
+    # if [[ $result -gt 0 ]]; then
+    #     title="$title [$result]" 
+    # fi
+
+    change_tab_title $title
+}
+
+function set_tab_to_command_line() {
+    local cmdline=$1
+    change_tab_title $cmdline
+}
+
+if [[ -n $ZELLIJ ]]; then
+    add-zsh-hook precmd set_tab_to_working_dir
+    add-zsh-hook preexec set_tab_to_command_line
+fi
+
+# yazi
+function yy() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}

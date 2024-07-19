@@ -32,13 +32,13 @@ dotfiles_os = get_os()
 print(f"Desktop Environment: {dotfiles_os}")
 
 match dotfiles_os:
-    case "desktop_archlinux":
-        command = "cd ~/git-repos/dotfiles/desktop\\ archlinux && ./dotfiles.sh"
+    case "desktopArchlinux":
+        command = "cd ~/git-repos/dotfiles/desktopArchlinux && ./dotfiles.sh"
         run_bash_command(command)
-    case "mbp_macos":
-        command = "cd ~/git-repos/dotfiles/mbp\\ macos/ && ls && ./dotfiles.sh"
+    case "mbpMacos":
+        command = "cd ~/git-repos/dotfiles/mbpMacos && ./dotfiles.sh"
         run_bash_command(command)
-    # case "mbp_archlinux":
+    # case "mbpArchlinux":
         # call script
     case "unknown":
         print(f"environmental variable not found. is it set?")

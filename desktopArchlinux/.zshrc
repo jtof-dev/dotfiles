@@ -14,7 +14,6 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-
 # aliases
 
 # filesystem
@@ -81,12 +80,11 @@ export "LD_LIBRARY_PATH=/usr/local/cuda-12.4/lib64\
 export EDITOR=/sbin/nvim
 
 export MOZ_ENABLE_WAYLAND=1
-# export TERM=xterm-256color
 export ZELLIJ_LAYOUT="~/.config/zellij"
 export ZELLIJ_AUTO_ATTACH="true"
 export _ZO_DATA_DIR="$HOME/.local/share"
 export STARSHIP_CONFIG=~/.config/starship.toml
-export DOTFILES_OS_CHECK="desktop_archlinux"
+export DOTFILES_OS_CHECK="desktopArchlinux"
 
 # evals
 eval "$(zoxide init zsh)"

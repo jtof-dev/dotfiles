@@ -1,4 +1,2 @@
-com.google.AndroidStudio
 com.usebottles.bottles
 com.valvesoftware.Steam
-dev.alextren.Spot

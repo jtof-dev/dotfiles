@@ -2,7 +2,6 @@
 1password-cli
 amd-ucode
 android-tools
-archiso
 ark
 audacity
 base
@@ -23,7 +22,6 @@ cuda-tools
 cudnn
 dex
 difftastic
-discord
 dkms
 dnsmasq
 docker
@@ -60,6 +58,7 @@ gtk-engine-murrine
 gtk-engines
 gwe
 htop
+hwinfo
 imagemagick
 inkscape
 intel-ucode
@@ -100,7 +99,6 @@ moreutils
 mtm-git
 mullvad-vpn
 nano
-ncspot
 neovim
 newsboat
 nodejs
@@ -132,7 +130,6 @@ playerctl
 plocate
 pnpm
 protonmail-bridge
-psst-git
 python-pipenv
 qbittorrent
 qemu-base
@@ -155,8 +152,8 @@ smartmontools
 spectacle
 spicetify-cli
 spotify
-spotify-qt
 spotify-tui
+spotifyd
 sshfs
 starship
 tealdeer

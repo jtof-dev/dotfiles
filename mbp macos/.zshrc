@@ -14,14 +14,12 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-
 # aliases
 
 # filesystem
 alias grep='grep --color=auto'
 alias ls='eza -a --icons'
 alias lsl='eza -la --icons'
-alias lo='locate'
 alias cdd='cd ..'
 alias cddd='cd ../..'
 alias cdddd='cd ../../..'
@@ -31,11 +29,9 @@ alias zzzz='z ../../..'
 alias rm='trash'
 alias fastfetch='fastfetch -c ~/.config/fastfetch/fastfetch.jsonc'
 alias ff='fastfetch'
-alias ufw='sudo ufw'
 
 # package management
 alias up='brew update && brew upgrade && brew cleanup -s'
-alias cl='brew cleanup -s'
 
 # text editors
 alias co='codium'
@@ -46,7 +42,7 @@ alias na='nano'
 alias sna='sudo nano'
 alias nv='nvim'
 alias snv='sudo nvim'
-alias svim='sudo vim'
+alias svi='sudo vim'
 
 # scripting
 alias sz='source ~/.zshrc'
@@ -71,11 +67,9 @@ export "LD_LIBRARY_PATH=/usr/local/cuda-12.4/lib64\
                          ${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}"
 export PATH=$PATH:/Applications/MATLAB_R2023b.app/bin
 export PNPM_HOME="/Users/andybabcock/Library/pnpm"
-export EDITOR=/sbin/nvim
+export EDITOR=nvim
 export DYLD_LIBRARY_PATH="(brew --prefix)/lib"
 
-export MOZ_ENABLE_WAYLAND=1
-export TERM=xterm-256color
 export ZELLIJ_LAYOUT="~/.config/zellij"
 export ZELLIJ_AUTO_ATTACH="true"
 export _ZO_DATA_DIR="$HOME/.local/share"
@@ -106,3 +100,50 @@ if [[ -z "$ZELLIJ" ]]; then
         exit
     fi
 fi
+
+function current_dir() {
+    local current_dir=$PWD
+    if [[ $current_dir == $HOME ]]; then
+        current_dir="~"
+    else
+        current_dir=${current_dir##*/}
+    fi
+    
+    echo $current_dir
+}
+
+function change_tab_title() {
+    local title=$1
+    command nohup zellij action rename-tab $title >/dev/null 2>&1
+}
+
+function set_tab_to_working_dir() {
+    local result=$?
+    local title=$(current_dir)
+    # uncomment the following to show the exit code after a failed command
+    # if [[ $result -gt 0 ]]; then
+    #     title="$title [$result]" 
+    # fi
+
+    change_tab_title $title
+}
+
+function set_tab_to_command_line() {
+    local cmdline=$1
+    change_tab_title $cmdline
+}
+
+if [[ -n $ZELLIJ ]]; then
+    add-zsh-hook precmd set_tab_to_working_dir
+    add-zsh-hook preexec set_tab_to_command_line
+fi
+
+# yazi
+function yy() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}

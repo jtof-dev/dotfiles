@@ -4,7 +4,10 @@ cmake
 cpp-gsl
 eza
 fastfetch
+fd
+felixkratz/formulae/sketchybar
 gdu
+gh
 glow
 go
 htop
@@ -14,7 +17,6 @@ luarocks
 maven
 mdv
 micro
-ncspot
 neofetch
 neovim
 nlohmann-json
@@ -28,6 +30,7 @@ redis
 ripgrep
 sleepwatcher
 spicetify-cli
+spotifyd
 starship
 terminal-notifier
 trash-cli
@@ -45,6 +48,7 @@ discord
 docker
 epic-games
 fanny
+floorp
 font-fira-code-nerd-font
 font-fira-mono-nerd-font
 font-noto-nerd-font

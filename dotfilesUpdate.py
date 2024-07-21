@@ -10,6 +10,7 @@ commands = [
     "cp ~/.config/starship.toml ./dotfiles/",
     "cp ~/.tmux.conf ./dotfiles/",
     "sudo cp -r ~/.config/yazi ./dotfiles/",
+    "cp ~/git-repos/gitReposUpdate.py ./dotfiles/",
 ]
 
 

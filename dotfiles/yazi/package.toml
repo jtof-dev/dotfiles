@@ -1,0 +1,5 @@
+[plugin]
+deps = [{ use = "llanosrocas/githead", commit = "05d1fe6" }, { use = "dedukun/relative-motions", commit = "73f5542" }]
+
+[flavor]
+deps = []

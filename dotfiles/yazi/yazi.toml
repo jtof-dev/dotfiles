@@ -1,0 +1,13 @@
+[plugin]
+append_previewers = [
+  { name = "*", run = "hexyl" },
+  { name = "*.md", run = "glow" },
+  { mime = "application/*zip", run = "ouch" },
+  { mime = "application/x-tar", run = "ouch" },
+  { mime = "application/x-bzip2", run = "ouch" },
+  { mime = "application/x-7z-compressed", run = "ouch" },
+  { mime = "application/x-rar", run = "ouch" },
+  { mime = "application/x-xz", run = "ouch" },
+  { mime = "audio/*", run = "exifaudio" },
+  { mime = "text/csv", run = "miller" },
+]

@@ -11,6 +11,7 @@ commands = [
     "cp ~/.tmux.conf ./dotfiles/",
     "sudo cp -r ~/.config/yazi ./dotfiles/",
     "cp ~/git-repos/gitReposUpdate.py ./dotfiles/",
+    "cp -r ~/.config/aerc ./dotfiles/",
 ]
 
 

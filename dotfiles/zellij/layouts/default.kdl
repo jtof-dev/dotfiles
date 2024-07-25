@@ -1,7 +1,7 @@
 layout {
     pane size=1 borderless=true {
         plugin location="file:~/.config/zellij/zjstatus/zjstatus.wasm" {
-            // hide_frame_for_single_pane "true"
+            hide_frame_for_single_pane "true"
 
             format_left  "#[fg=#3c4048]{tabs}#[fg=#3c4048]"
             format_right "#[fg=#3c4048]#[bg=#3c4048] #[fg=#ffffff,bg=#3c4048,bold]{session}#[bg=#3c4048] #[fg=#3c4048]"

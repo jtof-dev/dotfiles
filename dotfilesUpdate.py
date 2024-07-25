@@ -2,16 +2,17 @@ import os
 import subprocess
 
 commands = [
-    "cp -r ~/.config/nvim ./dotfiles/",
-    "cp -r ~/.config/fastfetch ./dotfiles/",
-    "cp -r ~/.config/zellij ./dotfiles/",
-    "mkdir -p ./spicetify/CustomApps && cp ~/.config/spicetify/CustomApps/customapps\\ update.sh ./spicetify/CustomApps/",
-    "cp ~/.config/kitty/kitty.conf ./dotfiles/",
-    "cp ~/.config/starship.toml ./dotfiles/",
-    "cp ~/.tmux.conf ./dotfiles/",
-    "sudo cp -r ~/.config/yazi ./dotfiles/",
-    "cp ~/git-repos/gitReposUpdate.py ./dotfiles/",
-    "cp -r ~/.config/aerc ./dotfiles/",
+    "cp -rv ~/.config/nvim ./dotfiles/",
+    "cp -rv ~/.config/fastfetch ./dotfiles/",
+    "cp -rv ~/.config/zellij ./dotfiles/",
+    "cp -v ~/.config/spicetify/CustomApps/customAppsUpdate.sh ./spicetify/CustomApps/",
+    "cp -v ~/.config/kitty/kitty.conf ./dotfiles/",
+    "cp -v ~/.config/starship.toml ./dotfiles/",
+    "cp -v ~/.tmux.conf ./dotfiles/",
+    "sudo cp -rv ~/.config/yazi ./dotfiles/",
+    "cp -v ~/git-repos/gitReposUpdate.py ./dotfiles/",
+    "cp -rv ~/.config/aerc ./dotfiles/",
+    "cp -rv ~/.config/spotify-player ./dotfiles/",
 ]
 
 

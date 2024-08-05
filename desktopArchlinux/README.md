@@ -1,5 +1,19 @@
 # archlinux
 
+## tree
+
+### ly
+
+- `/etc/pam.d/ly`
+
+### steam_dev.cfg
+
+- `~/.var/app/com.valvesoftware.Steam/.local/share/Steam/steam_dev.cfg`
+
+### config.ini
+
+- `/etc/ly/config.ini`
+
 ## ly
 
 - I edited the [/etc/pam.d/ly](ly) file to make it auto-login to kwallet using the [kwallet-pam-git](https://aur.archlinux.org/packages/kwallet-pam-git) aur package

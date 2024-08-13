@@ -8,4 +8,4 @@ yay -Qm | awk '{print $1}' >"aur explicit packages.txt"
 
 flatpak list --app --columns=application | tail -n +1 >"flatpak explicit packages.txt"
 
-cp ~/scripts/spotifyPipewireVolumeControl.py ../scripts/
+cp ~/scripts/spotifyPipewireVolumeControl/spotifyPipewireVolumeControlScriptWriter.py ../scripts/

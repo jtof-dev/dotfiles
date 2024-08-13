@@ -1,4 +1,6 @@
 .DS_Store
 dotfiles/aerc/accounts.conf
-dotfiles/aerc/gmailOauth/getOauth.sh
-dotfiles/aerc/gmailOauth/getOauth.py
+dotfiles/aerc/accounts
+dotfiles/aerc/scripts/*
+!dotfiles/aerc/scripts/generateAccountsConf.py
+!dotfiles/aerc/scripts/generateRefreshToken.py

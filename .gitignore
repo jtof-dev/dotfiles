@@ -1,3 +1,4 @@
 .DS_Store
 dotfiles/aerc/accounts.conf
-dotfiles/aerc/gmailOauth/get-oauth.sh
+dotfiles/aerc/gmailOauth/getOauth.sh
+dotfiles/aerc/gmailOauth/getOauth.py

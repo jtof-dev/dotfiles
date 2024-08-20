@@ -69,11 +69,11 @@ alias mvc='mullvad connect'
 alias mvd='mullvad disconnect'
 alias mvs='mullvad status'
 alias lg='lazygit'
-alias sp='spotify_player'
+alias sp='bash -c "sleep 5 && python ~/scripts/spotifyPipewireVolumeControl/spotifyPipewireVolumeControlScriptWriter.py" & spotify_player'
 alias mail='aerc'
 
 ## startup
-alias kde='startplasma-wayland'
+alias kde='bash ~/scripts/startupPrograms.sh & startplasma-wayland'
 
 
 # exports
@@ -89,7 +89,7 @@ export ZELLIJ_LAYOUT="~/.config/zellij"
 export ZELLIJ_AUTO_ATTACH="true"
 export _ZO_DATA_DIR="$HOME/.local/share"
 export STARSHIP_CONFIG=~/.config/starship.toml
-export DOTFILES_OS_CHECK="desktop_archlinux"
+export DOTFILES_OS_CHECK="desktopArchlinux"
 
 
 # evals

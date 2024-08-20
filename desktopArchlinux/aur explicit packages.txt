@@ -1,6 +1,7 @@
 1password
 1password-cli
 betterbird-bin
+betterbird-bin-debug
 betterdiscordctl-git
 brave-bin
 browsh-bin
@@ -37,7 +38,6 @@ python-taskw
 rpcs3-bin
 slippi-launcher
 spicetify-cli
-spicetify-cli-debug
 spotify
 ticktick
 tor-browser-bin

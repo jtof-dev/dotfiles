@@ -1,20 +1,24 @@
 #!/bin/python
 
 import os
+import subprocess
 
 
 def main():
-    refreshTokenFile = "/home/andya/.config/aerc/scripts/aab726RefreshToken"
-    aab726TemplateFile = "/home/andya/.config/aerc/scripts/aab726Template"
+    homeDirectory = str(
+        subprocess.run("echo $HOME", shell=True, text=True, capture_output=True)
+    )
+    refreshTokenFile = homeDirectory + "/.config/aerc/scripts/aab726RefreshToken"
+    aab726TemplateFile = homeDirectory + "/.config/aerc/scripts/aab726Template"
     clientId = os.environ.get("AERC_CLIENT_ID")
     clientSecret = os.environ.get("AERC_CLIENT_SECRET")
 
     with open(aab726TemplateFile, "r") as file:
         aab726TemplateFileContents = file.read()
 
-    aab726File = "/home/andya/.config/aerc/accounts/aab726@nau.edu"
-    accountsFolder = "/home/andya/.config/aerc/accounts/"
-    accountsConfFile = "/home/andya/.config/aerc/accounts.conf"
+    aab726File = homeDirectory + "/.config/aerc/accounts/aab726@nau.edu"
+    accountsFolder = homeDirectory + "/.config/aerc/accounts/"
+    accountsConfFile = homeDirectory + "/.config/aerc/accounts.conf"
 
     with open(refreshTokenFile, "r") as file:
         refreshToken = file.read()

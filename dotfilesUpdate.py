@@ -4,28 +4,29 @@ import os
 import subprocess
 
 commands = [
-    "cp -rv ~/.config/nvim ./dotfiles/",
-    "cp -rv ~/.config/fastfetch ./dotfiles/",
-    "cp -rv ~/.config/zellij ./dotfiles/",
+    "cp -rv ~/.config/nvim ./crossPlatform/",
+    "cp -rv ~/.config/fastfetch ./crossPlatform/",
+    "cp -rv ~/.config/zellij ./crossPlatform/",
     "cp -v ~/.config/spicetify/CustomApps/customAppsUpdate.sh ./spicetify/CustomApps/",
-    "cp -v ~/.config/kitty/kitty.conf ./dotfiles/",
-    "cp -v ~/.config/starship.toml ./dotfiles/",
-    "cp -v ~/.tmux.conf ./dotfiles/",
-    "sudo cp -rv ~/.config/yazi ./dotfiles/",
-    "cp -v ~/git-repos/gitReposUpdate.py ./dotfiles/",
-    "cp -rv ~/.config/aerc ./dotfiles/",
-    "cp -rv ~/.config/spotify-player ./dotfiles/",
+    "cp -v ~/.config/kitty/kitty.conf ./crossPlatform/",
+    "cp -v ~/.config/starship.toml ./crossPlatform/",
+    "cp -v ~/.tmux.conf ./crossPlatform/",
+    "sudo cp -rv ~/.config/yazi ./crossPlatform/",
+    "cp -v ~/git-repos/gitReposUpdate.py ./scripts/",
+    "cp -rv ~/.config/aerc ./crossPlatform/",
+    "cp -rv ~/.config/spotify-player ./crossPlatform/",
 ]
 
 
-def run_command(command):
+def runCommand(command):
     result = subprocess.run(command, shell=True, text=True, capture_output=True)
-    print(result.stdout)
+    # print(result.stdout)
+    print(f"{command}\n")
     if result.returncode != 0:
         print(result.stderr)
 
 
-def get_os():
+def getOs():
     os_check = os.getenv("DOTFILES_OS_CHECK")
 
     if os_check:
@@ -35,18 +36,18 @@ def get_os():
 
 
 for command in commands:
-    run_command(command)
+    runCommand(command)
 
-dotfiles_os = get_os()
-print(f"Desktop Environment: {dotfiles_os}")
+dotfilesOs = getOs()
+print(f"Desktop Environment: {dotfilesOs}")
 
-match dotfiles_os:
+match dotfilesOs:
     case "desktopArchlinux":
         command = "cd ~/git-repos/dotfiles/desktopArchlinux && ./dotfiles.sh"
-        run_command(command)
+        runCommand(command)
     case "mbpMacos":
         command = "cd ~/git-repos/dotfiles/mbpMacos && ./dotfiles.sh"
-        run_command(command)
+        runCommand(command)
     # case "mbpArchlinux":
     # call script
     case "unknown":

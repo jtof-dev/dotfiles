@@ -1,6 +1,6 @@
 .DS_Store
-dotfiles/aerc/accounts.conf
-dotfiles/aerc/accounts
-dotfiles/aerc/scripts/*
-!dotfiles/aerc/scripts/generateAccountsConf.py
-!dotfiles/aerc/scripts/generateRefreshToken.py
+crossPlatform/aerc/accounts.conf
+crossPlatform/aerc/accounts
+crossPlatform/aerc/scripts/*
+!crossPlatform/aerc/scripts/generateAccountsConf.py
+!crossPlatform/aerc/scripts/generateRefreshToken.py

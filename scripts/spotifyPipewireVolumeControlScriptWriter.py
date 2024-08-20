@@ -32,14 +32,14 @@ def getProcessNumber(processNumberCommand):
     output = subprocess.run(
         processNumberCommand, shell=True, text=True, capture_output=True
     )
-    print(output.stdout)
+    # print(output.stdout)
     pattern = re.compile(r"(\d+)\.\s+.*\[spotify_player\]")
 
     match = pattern.search(output.stdout)
     if match:
         processNumber = str(match.group(1))
-        print(f"Matched text: {match.group()}")
-        print(f"Extracted number: {processNumber}")
+        # print(f"Matched text: {match.group()}")
+        # print(f"Extracted number: {processNumber}")
         return processNumber
     else:
         print("Process not found.")

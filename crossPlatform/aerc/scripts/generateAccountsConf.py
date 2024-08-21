@@ -5,9 +5,9 @@ import subprocess
 
 
 def main():
-    homeDirectory = str(
-        subprocess.run("echo $HOME", shell=True, text=True, capture_output=True)
-    )
+    homeDirectory = subprocess.run(
+        "echo $HOME", shell=True, text=True, capture_output=True
+    ).stdout[:-1]
     refreshTokenFile = homeDirectory + "/.config/aerc/scripts/aab726RefreshToken"
     aab726TemplateFile = homeDirectory + "/.config/aerc/scripts/aab726Template"
     clientId = os.environ.get("AERC_CLIENT_ID")

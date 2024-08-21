@@ -69,7 +69,7 @@ alias mvc='mullvad connect'
 alias mvd='mullvad disconnect'
 alias mvs='mullvad status'
 alias lg='lazygit'
-alias sp='bash -c "sleep 5 && python ~/scripts/spotifyPipewireVolumeControl/spotifyPipewireVolumeControlScriptWriter.py" & spotify_player'
+alias sp='bash -c "sleep 5 && python ~/scripts/spotifyPipewireVolumeControl/spotifyPipewireVolumeControlScriptWriter.py" & disown && spotify_player'
 alias mail='aerc'
 
 ## startup
@@ -80,10 +80,8 @@ alias kde='bash ~/scripts/startupPrograms.sh & startplasma-wayland'
 export PATH=$PATH:/home/andya/.spicetify
 export PATH="$PATH:/home/andya/.cargo/bin"
 export PATH="/usr/local/cuda-12.4/bin${PATH:+:${PATH}}"
-export "LD_LIBRARY_PATH=/usr/local/cuda-12.4/lib64\
-                         ${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}"
+export "LD_LIBRARY_PATH=/usr/local/cuda-12.4/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}"
 export EDITOR=/sbin/nvim
-
 export MOZ_ENABLE_WAYLAND=1
 export ZELLIJ_LAYOUT="~/.config/zellij"
 export ZELLIJ_AUTO_ATTACH="true"
@@ -95,6 +93,7 @@ export DOTFILES_OS_CHECK="desktopArchlinux"
 # evals
 eval "$(zoxide init zsh)"
 eval "$(starship init zsh)"
+
 
 # program specific setup
 
@@ -164,3 +163,5 @@ function yy() {
 	fi
 	rm -f -- "$tmp"
 }
+
+

@@ -10,12 +10,12 @@ import generateAccountsConf
 
 
 def main():
-    homeDirectory = str(
-        subprocess.run("echo $HOME", shell=True, text=True, capture_output=True)
-    )
     redirectUri = "https://oauth2.dance/"
     googleAccountsBaseUrl = "https://accounts.google.com"
 
+    homeDirectory = subprocess.run(
+        "echo $HOME", shell=True, text=True, capture_output=True
+    ).stdout[:-1]
     refeshTokenFile = homeDirectory + "/.config/aerc/scripts/aab726RefreshToken"
 
     clientId = os.environ.get("AERC_CLIENT_ID")

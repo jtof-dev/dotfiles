@@ -25,6 +25,7 @@ nvm
 official-gamecube-controller-adapter-rules
 pandoc-bin
 pika-backup
+proton-mail-bin-debug
 python-convertdate
 python-hijri-converter
 python-holidays

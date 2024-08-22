@@ -47,10 +47,10 @@ def runCommand(command):
 
 
 def getOs():
-    os_check = os.getenv("DOTFILES_OS_CHECK")
+    osCheck = os.getenv("DOTFILES_OS_CHECK")
 
-    if os_check:
-        return os_check
+    if osCheck:
+        return osCheck
     else:
         return "unknown"
 

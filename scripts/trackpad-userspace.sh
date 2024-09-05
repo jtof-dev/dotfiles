@@ -51,12 +51,12 @@ sudo xinput --set-prop $id 346 0
 xinput --set-prop $id 349 1
 
 # set the scroll speed 1 = very fast; 100 = very slow
-xinput --set-prop $id 350 50
+sudo xinput --set-prop $id 350 50
 
 # high resolution scroll
 sudo xinput --set-prop $id 352 1
 
 # start libinput-gestures gui and close gracefully with wmctrl
-gestures &
-sleep 2
-wmctrl -Fc Gestures
+# gestures &
+# sleep 2
+# wmctrl -Fc Gestures

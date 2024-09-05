@@ -1,0 +1,25 @@
+[Unit]
+Description=Disable and Re-Enable Apple BCE Module (and Wi-Fi)
+Before=sleep.target
+StopWhenUnneeded=yes
+
+[Service]
+User=root
+Type=oneshot
+RemainAfterExit=yes
+
+#ExecStart=/sbin/modprobe -r brcmfmac_wcc
+#ExecStart=/sbin/modprobe -r brcmfmac
+ExecStart=/sbin/rmmod -f apple-bce
+ExecStart=/sbin/systemctl stop --now wpa_supplicant NetworkManager t2fanrd
+#ExecStop=/sbin/systemctl stop tiny-dfr
+
+#ExecStop=/sbin/systemctl start tiny-dfr
+ExecStop=/sbin/modprobe apple-bce
+ExecStop=/sbin/systemctl start --now wpa_supplicant NetworkManager t2fanrd
+#ExecStop=/sbin/bash /home/andya/scripts/trackpad.sh
+#ExecStop=/sbin/modprobe brcmfmac
+#ExecStop=/sbin/modprobe brcmfmac_wcc
+
+[Install]
+WantedBy=sleep.target

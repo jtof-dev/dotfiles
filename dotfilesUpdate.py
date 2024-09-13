@@ -26,13 +26,14 @@ def main():
 
     match dotfilesOs:
         case "desktopArchlinux":
-            command = "cd ~/git-repos/dotfiles/desktopArchlinux && ./dotfiles.sh"
+            command = "cd ~/gitRepos/dotfiles/desktopArchlinux && ./dotfiles.sh"
             runCommand(command)
         case "mbpMacos":
-            command = "cd ~/git-repos/dotfiles/mbpMacos && ./dotfiles.sh"
+            command = "cd ~/gitRepos/dotfiles/mbpMacos && ./dotfiles.sh"
             runCommand(command)
-        # case "mbpArchlinux":
-        # call script
+        case "mbpArchlinux":
+            command = "cd ~/gitRepos/dotfiles/mbpArchlinux && ./dotfiles.sh"
+            runCommand(command)
         case "unknown":
             print("environmental variable not found. is it set?")
             exit()

@@ -40,7 +40,7 @@ yazi
 
 zellij
 
-- `~/.config/zellij`
+- `~/.config/zellij/`
 
 ## aerc
 
@@ -117,3 +117,25 @@ spicetify apply
 - used to keep all the custom apps up to date
 
 - place the `customapps update.sh` script in `~/.config/spicetify/CustomApps`, and run with `source customapps\ update.sh` from inside the `CustomApps` folder
+
+## spotify-player
+
+- I manually compile / update `spotify-player` from their git repo, and for some reason I have to use different commands on different platforms
+
+desktopArchlinux:
+
+```
+cargo build --release --no-default-features --features streaming,rodio-backend,lyric-finder,image,fzf,media-control,image
+```
+
+mbpArchlinux:
+
+```
+cargo build --release --no-default-features --features streaming,pulseaudio-backend,lyric-finder,image,fzf,media-control,image
+```
+
+- and I add the compiled binary to my path:
+
+```
+export PATH="$PATH:/home/andya/gitRepos/spotify-player/target/release"
+```

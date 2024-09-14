@@ -120,15 +120,7 @@ spicetify apply
 
 ## spotify-player
 
-- I manually compile / update `spotify-player` from their git repo, and for some reason I have to use different commands on different platforms
-
-desktopArchlinux:
-
-```
-cargo build --release --no-default-features --features streaming,rodio-backend,lyric-finder,image,fzf,media-control,image
-```
-
-mbpArchlinux:
+- I manually compile / update `spotify-player` from their git repo because I have had trouble with their aur packages in the past
 
 ```
 cargo build --release --no-default-features --features streaming,pulseaudio-backend,lyric-finder,image,fzf,media-control,image

@@ -54,6 +54,7 @@ alias svim='sudo vim'
 ## scripting
 alias vu='sh -c "$(curl -sS https://raw.githubusercontent.com/Vendicated/VencordInstaller/main/install.sh)"'
 alias kr='kquitapp6 plasmashell && kstart plasmashell'
+alias kr5='kquitapp5 plasmashell && kstart plasmashell'
 alias sz='source ~/.zshrc'
 alias uplo='sudo updatedb'
 alias upsp='python ~/scripts/spotifyPipewireVolumeControl/spotifyPipewireVolumeControlScriptWriter.py'
@@ -77,9 +78,12 @@ alias kde='bash ~/scripts/startupPrograms.sh & startplasma-wayland'
 
 
 # exports
-export PATH=$PATH:/home/andya/.spicetify
+export PATH="$PATH:/home/andya/.spicetify"
 export PATH="$PATH:/home/andya/.cargo/bin"
-export PATH="/usr/local/cuda-12.4/bin${PATH:+:${PATH}}"
+export PATH="$PATH:/usr/local/cuda-12.4/bin"
+export PATH="$PATH:/home/andya/intelFPGA_lite/23.1std/quartus/bin"
+export PATH="$PATH:/home/andya/intelFPGA_lite/23.1std/questa_fse/bin"
+export PATH="$PATH:/home/andya/gitRepos/spotify-player/target/release"
 export "LD_LIBRARY_PATH=/usr/local/cuda-12.4/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}"
 export EDITOR=/sbin/nvim
 export MOZ_ENABLE_WAYLAND=1
@@ -88,6 +92,7 @@ export ZELLIJ_AUTO_ATTACH="true"
 export _ZO_DATA_DIR="$HOME/.local/share"
 export STARSHIP_CONFIG=~/.config/starship.toml
 export DOTFILES_OS_CHECK="desktopArchlinux"
+export LM_LICENSE_FILE="~/gitRepos/intelQuartus/intelQuestaLicense.dat"
 
 
 # evals
@@ -165,3 +170,5 @@ function yy() {
 }
 
 
+
+export QSYS_ROOTDIR="/home/andya/.cache/yay/quartus-free/pkg/quartus-free-quartus/opt/intelFPGA/23.1/quartus/sopc_builder/bin"

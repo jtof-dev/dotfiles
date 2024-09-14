@@ -33,7 +33,7 @@ def getProcessNumber(processNumberCommand):
         processNumberCommand, shell=True, text=True, capture_output=True
     )
     # print(output.stdout)
-    pattern = re.compile(r"(\d+)\.\s+.*\[spotify_player\]")
+    pattern = re.compile(r"(\d+)\.\s+spotify-player")
 
     match = pattern.search(output.stdout)
     if match:

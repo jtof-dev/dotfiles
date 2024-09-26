@@ -81,8 +81,6 @@ alias kde='bash ~/scripts/startupPrograms.sh & startplasma-wayland'
 export PATH="$PATH:/home/andya/.spicetify"
 export PATH="$PATH:/home/andya/.cargo/bin"
 export PATH="$PATH:/usr/local/cuda-12.4/bin"
-export PATH="$PATH:/home/andya/intelFPGA_lite/23.1std/quartus/bin"
-export PATH="$PATH:/home/andya/intelFPGA_lite/23.1std/questa_fse/bin"
 export PATH="$PATH:/home/andya/gitRepos/spotify-player/target/release"
 export "LD_LIBRARY_PATH=/usr/local/cuda-12.4/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}"
 export EDITOR=/sbin/nvim
@@ -92,7 +90,7 @@ export ZELLIJ_AUTO_ATTACH="true"
 export _ZO_DATA_DIR="$HOME/.local/share"
 export STARSHIP_CONFIG=~/.config/starship.toml
 export DOTFILES_OS_CHECK="desktopArchlinux"
-export LM_LICENSE_FILE="~/gitRepos/intelQuartus/intelQuestaLicense.dat"
+export LM_LICENSE_FILE="/home/andya/gitRepos/intelQuartus/intelQuestaLicense.dat"
 
 
 # evals

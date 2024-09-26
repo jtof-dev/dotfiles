@@ -1,2 +1,3 @@
+com.spotify.Client
 com.usebottles.bottles
 com.valvesoftware.Steam

@@ -17,6 +17,7 @@ calcure
 cbonsai
 certbot
 chromium
+cisco-anyconnect
 clang
 cpu-x
 cuda
@@ -163,7 +164,6 @@ slippi-launcher
 smartmontools
 spectacle
 spicetify-cli
-spotify
 spotifyd
 sshfs
 starship
@@ -201,6 +201,7 @@ xclip
 xdelta3
 xdg-utils
 xdotool
+xonsh
 xorg-server
 xorg-xinit
 xorg-xlsclients

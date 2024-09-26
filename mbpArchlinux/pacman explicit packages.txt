@@ -9,6 +9,7 @@ baobab
 base
 base-devel
 bat
+brave-bin
 btop
 chromium
 dhcpcd
@@ -84,6 +85,7 @@ libreoffice-fresh
 linux-firmware
 linux-t2
 linux-t2-headers
+localsearch
 loupe
 ly
 malcontent
@@ -98,6 +100,8 @@ neovim
 networkmanager
 newsboat
 nodejs
+noto-fonts
+noto-fonts-cjk
 npm
 obs-studio
 obsidian
@@ -107,6 +111,7 @@ p7zip
 pandoc-bin
 plocate
 pnpm
+powertop
 protonmail-bridge
 python-libevdev
 python-pyudev
@@ -139,12 +144,12 @@ tor-browser-bin
 totem
 touche
 touchegg
-tracker3-miners
 trash-cli
 ttf-firacode-nerd
 ttf-jetbrains-mono-nerd
 ttf-montserrat
 ttf-noto-nerd
+ufw
 usbimager
 veracrypt-git
 vesktop-bin
@@ -152,13 +157,14 @@ vi
 vim
 vscodium-bin
 vscodium-bin-marketplace
+w3m
 wget
 wmctrl
 xdg-desktop-portal-gnome
 xdg-user-dirs-gtk
+xonsh
 xorg-xinput
 yay
-yay-debug
 yazi
 yelp
 yt-dlp

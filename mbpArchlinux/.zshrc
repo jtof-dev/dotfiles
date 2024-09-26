@@ -26,7 +26,6 @@ alias zzzz='z ../../..'
 alias rm='trash'
 alias fastfetch='/sbin/fastfetch -c ~/.config/fastfetch/fastfetch.jsonc'
 alias ff='fastfetch'
-alias ufw='sudo ufw'
 
 ## package management
 alias pacman='sudo /sbin/pacman'
@@ -35,8 +34,8 @@ alias pas='sudo /sbin/pacman -S'
 alias par='sudo /sbin/pacman -R'
 alias yas='yay -S'
 alias yar='yay -R'
-alias up='newsboat -r && yay -Syu'
-alias qup='yay -Syu'
+alias up='newsboat -r && echo -e "\nPacman and AUR update\n----------------------\n" && yay -Syu && echo -e "\nFlatpak update\n---------------\n" && flatpak update && echo "\nDone!" '
+alias qup='echo -e "\nPacman and AUR update\n----------------------\n" && yay -Syu && echo -e "\nFlatpak update\n---------------\n" && flatpak update && echo "\nDone!" '
 alias cl='yay -Sc && pacman -Qtdq | sudo ifne pacman -Rns - && echo -e "\nDone!" '
 
 ## text editors
@@ -70,6 +69,8 @@ alias mvd='mullvad disconnect'
 alias mvs='mullvad status'
 alias lg='lazygit'
 alias sp='spotify_player'
+alias ufw='sudo ufw'
+alias ptop='sudo powertop'
 
 # exports
 export PATH="$PATH:/home/andya/.spicetify"
@@ -83,6 +84,7 @@ export ZELLIJ_AUTO_ATTACH="true"
 export _ZO_DATA_DIR="$HOME/.local/share"
 export STARSHIP_CONFIG=~/.config/starship.toml
 export DOTFILES_OS_CHECK="mbpArchlinux"
+export LM_LICENSE_FILE="/home/andya/gitRepos/intelFPGA/license.dat"
 
 
 # evals

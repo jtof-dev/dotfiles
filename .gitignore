@@ -5,3 +5,4 @@ crossPlatform/aerc/scripts/*
 crossPlatform/nvim/lazy-lock.lua
 !crossPlatform/aerc/scripts/generateAccountsConf.py
 !crossPlatform/aerc/scripts/generateRefreshToken.py
+crossPlatform/nvim/lazy-lock.lua

@@ -1,0 +1,36 @@
+#!/bin/xonsh
+
+import os
+import subprocess
+
+
+def main():
+    cp -rv ~/.config/nvim ./crossPlatform/
+    cp -rv ~/.config/fastfetch ./crossPlatform/
+    cp -rv ~/.config/zellij ./crossPlatform/
+    cp -v ~/.config/spicetify/CustomApps/customAppsUpdate.sh ./spicetify/CustomApps/
+    cp -v ~/.config/kitty/kitty.conf ./crossPlatform/
+    cp -v ~/.config/starship.toml ./crossPlatform/
+    cp -v ~/.tmux.conf ./crossPlatform/
+    cp -rv ~/.config/yazi ./crossPlatform/
+    cp -v ~/git-repos/gitReposUpdate.py ./scripts/
+    cp -rv ~/.config/aerc ./crossPlatform/
+    cp -rv ~/.config/spotify-player ./crossPlatform/
+
+    dotfilesOs = $DOTFILES_OS_CHECK
+    print(f"Desktop Environment: {dotfilesOs}")
+
+    match dotfilesOs:
+        case "desktopArchlinux":
+            cd ~/gitRepos/dotfiles/desktopArchlinux && ./dotfiles.sh
+        case "mbpMacos":
+            cd ~/gitRepos/dotfiles/mbpMacos && ./dotfiles.sh
+        case "mbpArchlinux":
+            cd ~/gitRepos/dotfiles/mbpArchlinux && ./dotfiles.sh
+        case "unknown":
+            print("environmental variable not found. is it set?")
+            exit()
+
+
+if __name__ == "__main__":
+    main()

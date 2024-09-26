@@ -20,8 +20,8 @@ default_device = "spotifyPlayer"
 
 [device]
 name = "spotifyPlayer"
-device_type = "speaker"
-volume = 70
+device_type = "computer"
+volume = 100
 bitrate = 320
 audio_cache = false
 normalization = true

@@ -1,22 +1,25 @@
 #!/bin/xonsh
 
-import os
-import subprocess
-
+import argparse
 
 def main():
-    cp -rv ~/.config/nvim ./crossPlatform/
-    cp -rv ~/.config/fastfetch ./crossPlatform/
-    cp -rv ~/.config/zellij ./crossPlatform/
-    cp -v ~/.config/spicetify/CustomApps/customAppsUpdate.sh ./spicetify/CustomApps/
-    cp -v ~/.config/kitty/kitty.conf ./crossPlatform/
-    cp -v ~/.config/starship.toml ./crossPlatform/
-    cp -v ~/.tmux.conf ./crossPlatform/
-    cp -rv ~/.config/yazi ./crossPlatform/
-    cp -v ~/git-repos/gitReposUpdate.py ./scripts/
-    cp -rv ~/.config/aerc ./crossPlatform/
-    cp -rv ~/.config/spotify-player ./crossPlatform/
 
+    parser = argparse.ArgumentParser(description="copy dotfiles from local computer to git repo")
+
+    parser.add_argument("-c", "--crossPlatform", action="store_true", help="copy crossPlatform and platform specific dotfiles")
+    parser.add_argument("-l", "--local", action="store_true", help="copy crossPlatform and platform specific dotfiles")
+
+    args = parser.parse_args()
+
+    if args.crossPlatform and not args.local:
+            crossPlatform()
+            print("copying crossPlatform and local dotfiles")
+    elif args.local and not args.crossPlatform:
+            print("copying only local dotfiles")
+    else:
+        print("neither '--crossPlatform' or '--local' specified. exiting...")
+        exit()
+    
     dotfilesOs = $DOTFILES_OS_CHECK
     print(f"Desktop Environment: {dotfilesOs}")
 
@@ -30,6 +33,42 @@ def main():
         case "unknown":
             print("environmental variable not found. is it set?")
             exit()
+
+
+def crossPlatform():
+
+    cp -r ~/.config/nvim ./crossPlatform/
+    print("Neovim config copied.")
+
+    cp -r ~/.config/fastfetch ./crossPlatform/
+    print("fastfetch config copied.")
+
+    cp -r ~/.config/zellij ./crossPlatform/
+    print("zellij config copied.")
+
+    cp ~/.config/spicetify/CustomApps/customAppsUpdate.sh ./crossPlatform/spicetify/CustomApps/
+    print("customAppsUpdate.sh copied.")
+
+    cp ~/.config/kitty/kitty.conf ./crossPlatform/
+    print("kitty.conf copied.")
+
+    cp ~/.config/starship.toml ./crossPlatform/
+    print("starship.toml copied.")
+
+    cp ~/.tmux.conf ./crossPlatform/
+    print("tmux.conf copied.")
+
+    cp -r ~/.config/yazi ./crossPlatform/
+    print("yazi config copied.")
+
+    cp ~/git-repos/gitReposUpdate.py ./scripts/
+    print("gitReposUpdate.py copied.")
+
+    cp -r ~/.config/aerc ./crossPlatform/
+    print("aerc config copied.")
+
+    cp -r ~/.config/spotify-player ./crossPlatform/
+    print("spotify-player config copied.")
 
 
 if __name__ == "__main__":

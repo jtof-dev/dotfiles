@@ -1,0 +1,9 @@
+#!/bin/xonsh
+
+import os
+from colorama import Fore, Style
+
+for directory in os.listdir("./"):
+        if os.path.isdir(directory):
+                print(Fore.GREEN + "\n==>" + Style.RESET_ALL + Style.BRIGHT + f"{directory}\n" + Style.RESET_ALL)
+                git -C @(directory) pull

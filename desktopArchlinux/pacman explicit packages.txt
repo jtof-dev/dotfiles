@@ -139,6 +139,7 @@ playerctl
 plocate
 pnpm
 protonmail-bridge
+python-colorama
 python-pipenv
 python-pipx
 qbittorrent

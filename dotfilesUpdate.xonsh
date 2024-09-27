@@ -1,13 +1,14 @@
 #!/bin/xonsh
 
 import argparse
+from colorama import Fore, Style
 
 def main():
 
     setup()
 
     dotfilesOs = $DOTFILES_OS_CHECK
-    print(f"\nDesktop Environment: {dotfilesOs}")
+    print(Fore.GREEN + "\n==>" + Style.RESET_ALL + Style.BRIGHT + f"Desktop Environment: {dotfilesOs}" + Style.RESET_ALL)
 
     path = $(pwd)
 
@@ -33,11 +34,11 @@ def setup():
 
     if args.crossPlatform and not args.specific:
             crossPlatform()
-            print("copying crossPlatform and local dotfiles")
+            print(Fore.GREEN + "\n==>" + Style.RESET_ALL + Style.BRIGHT + "copying crossPlatform and local dotfiles" + Style.RESET_ALL)
     elif args.specific and not args.crossPlatform:
             print("copying only local dotfiles")
     else:
-        print("\nno flag passed. copy (c)rossPlatform and platform specific dotfiles, or just platform (s)pecific dotfiles")
+        print(Fore.GREEN + "\n==>" + Style.RESET_ALL + Style.BRIGHT + "no flag passed. copy (c)rossPlatform and platform specific dotfiles, or just platform (s)pecific dotfiles" + Style.RESET_ALL)
         
         while True:
             choice = input("(default=crossPlatform): ").strip()
@@ -77,7 +78,7 @@ def crossPlatform():
     cp -r ~/.config/yazi ./crossPlatform/
     print("yazi config copied.")
 
-    cp ~/gitRepos/gitReposUpdate.py ./scripts/
+    cp ~/gitRepos/gitReposUpdate.xonsh ./scripts/
     print("gitReposUpdate.py copied.")
 
     cp -r ~/.config/aerc ./crossPlatform/

@@ -24,6 +24,7 @@ nvm
 official-gamecube-controller-adapter-rules
 pandoc-bin
 pika-backup
+pika-backup-debug
 python-convertdate
 python-hijri-converter
 python-holidays
@@ -40,6 +41,7 @@ quartus-free-questa
 rpcs3-bin
 slippi-launcher
 spicetify-cli
+spicetify-cli-debug
 ticktick
 tor-browser-bin
 turbo-base64

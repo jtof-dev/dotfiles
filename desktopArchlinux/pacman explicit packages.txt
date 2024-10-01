@@ -196,6 +196,7 @@ wezterm
 wget
 wireless_tools
 wireplumber
+wl-clipboard
 words
 wpa_supplicant
 xclip

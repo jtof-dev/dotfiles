@@ -23,7 +23,6 @@ nvflash
 nvm
 official-gamecube-controller-adapter-rules
 pandoc-bin
-pika-backup
 python-convertdate
 python-hijri-converter
 python-holidays
@@ -32,7 +31,6 @@ python-jdatetime
 python-kitchen
 python-korean_lunar_calendar
 python-py3nvml
-python-pyfuse3
 python-taskw
 quartus-free-devinfo-cyclonev
 quartus-free-quartus

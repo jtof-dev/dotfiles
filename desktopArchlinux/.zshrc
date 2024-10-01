@@ -24,59 +24,63 @@ alias zz="z .."
 alias zzz="z ../.."
 alias zzzz="z ../../.."
 alias cat="bat -p"
-alias bat="bat -p"
+alias bat="/sbin/bat -p"
 alias bt="bat -p"
 alias rm="trash"
 alias fastfetch="/sbin/fastfetch -c ~/.config/fastfetch/fastfetch.jsonc"
 alias ff="fastfetch"
-alias ufw="sudo ufw"
+alias ufw="sudo /sbin/ufw"
+alias chmod="sudo /sbin/chmod"
+alias ch7="sudo /sbin/chmod +777"
 
 ## package management
 alias pacman="sudo /sbin/pacman"
 alias pa="sudo /sbin/pacman"
-alias pas="sudo /sbin/pacman -S"
-alias par="sudo /sbin/pacman -R"
-alias yas="yay -S"
-alias yar="yay -R"
+alias ps="sudo /sbin/pacman -S"
+alias pr="sudo /sbin/pacman -R"
+alias ys="yay -S"
+alias yr="yay -R"
 alias up='newsboat -r && echo -e "\nPacman and AUR update\n----------------------\n" && yay -Syu && echo -e "\nFlatpak update\n---------------\n" && flatpak update && echo "\nDone!"'
-alias qup='echo -e "\nPacman and AUR update\n----------------------\n" && yay -Syu && echo -e "\nFlatpak update\n---------------\n" && flatpak update && echo "\nDone!"'
-alias yup='echo -e "\nPacman and AUR update\n----------------------\n" && yay -Syu --noconfirm && echo -e "\nFlatpak update\n---------------\n" && flatpak update -y && echo "\nDone!"'
+alias qp='echo -e "\nPacman and AUR update\n----------------------\n" && yay -Syu && echo -e "\nFlatpak update\n---------------\n" && flatpak update && echo "\nDone!"'
+alias yp='echo -e "\nPacman and AUR update\n----------------------\n" && yay -Syu --noconfirm && echo -e "\nFlatpak update\n---------------\n" && flatpak update -y && echo "\nDone!"'
 alias cl='yay -Sc --noconfirm && pacman -Qtdq --noconfirm | sudo ifne pacman -Rns - --noconfirm && echo -e "\nDone!"'
 
 ## text editors
 alias co="codium"
-alias sco="sudo codium"
+alias sc="sudo /sbin/codium"
+alias ka="kate"
+alias sk="sudo /sbin/kate"
 alias mi="micro"
-alias smi="sudo micro"
+alias sm="sudo /sbin/micro"
 alias na="nano"
-alias sna="sudo nano"
+alias sn="sudo /sbin/nano"
 alias nv="nvim"
 alias nvt="NVIM_APPNAME=nvimTest nvim"
-alias snv="sudo nvim"
-alias svim="sudo vim"
+alias sn="sudo /sbin/nvim"
+alias sv="sudo /sbin/vim"
 
 ## scripting
 alias vu="sh -c \"$(curl -sS https://raw.githubusercontent.com/Vendicated/VencordInstaller/main/install.sh)\""
 alias kr="kquitapp6 plasmashell && kstart plasmashell"
 alias kr5="kquitapp5 plasmashell && kstart plasmashell"
 alias sz="source ~/.zshrc"
-alias uplo="sudo updatedb"
-alias upsp="python ~/scripts/spotifyPipewireVolumeControl/spotifyPipewireVolumeControlScriptWriter.py"
+alias ul="sudo updatedb"
+alias us="python ~/scripts/spotifyPipewireVolumeControl/spotifyPipewireVolumeControlScriptWriter.py"
 
 ## misc
-alias docker="sudo docker"
-alias docker-compose="sudo docker-compose"
-alias docu="docker-compose up"
-alias docd="docker-compose down"
+alias docker="sudo /sbin/docker"
+alias docker-compose="sudo /sbin/docker-compose"
+alias docu="sudo /sbin/docker-compose up"
+alias docd="sudo /sbin/docker-compose down"
 alias mlcli="matlab -nodesktop"
 alias ocli="octave --no-gui"
-alias mvc="mullvad connect"
-alias mvd="mullvad disconnect"
-alias mvs="mullvad status"
+alias mc="mullvad connect"
+alias md="mullvad disconnect"
+alias ms="mullvad status"
 alias lg="lazygit"
 alias sp='bash -c "sleep 5 && python ~/scripts/spotifyPipewireVolumeControl/spotifyPipewireVolumeControlScriptWriter.py" & disown && spotify_player'
-alias mail="aerc"
 alias gp="git pull"
+alias gs="git status"
 
 ## startup
 alias kde="bash ~/scripts/startupPrograms.sh & startplasma-wayland"
@@ -91,9 +95,9 @@ export PATH="$PATH:/usr/local/cuda-12.4/bin"
 export PATH="$PATH:/home/andya/gitRepos/spotify-player/target/release"
 
 ## programs
+export MOZ_ENABLE_WAYLAND=1
 export LD_LIBRARY_PATH="/usr/local/cuda-12.4/lib64"
 export EDITOR="/sbin/nvim"
-export MOZ_ENABLE_WAYLAND=1
 export ZELLIJ_LAYOUT="~/.config/zellij"
 export ZELLIJ_AUTO_ATTACH="true"
 export _ZO_DATA_DIR="$HOME/.local/share"

@@ -96,6 +96,9 @@ cache-headers = true
 - to set everything up, run some combination of the following:
 
 ```
+chmod a+wr /var/lib/flatpak/app/com.spotify.Client/x86_64/stable/active/files/extra/share/spotify
+chmod a+wr /var/lib/flatpak/app/com.spotify.Client/x86_64/stable/active/files/extra/share/spotify/Apps -R
+
 spicetify backup apply
 spicetify config inject_css 1
 spicetify config replace_colors 1

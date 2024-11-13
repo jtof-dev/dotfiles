@@ -26,6 +26,7 @@ cudnn
 dante
 dex
 difftastic
+discord
 dkms
 dnsmasq
 docker
@@ -86,7 +87,6 @@ kwalletmanager
 lazygit
 libpulse
 libreoffice-fresh
-librespot
 libvirt
 libxcrypt-compat
 linux-firmware
@@ -103,6 +103,7 @@ mangohud
 maven
 mesa-demos
 micro
+mono
 moreutils
 mtm-git
 mullvad-vpn-bin
@@ -142,6 +143,7 @@ protonmail-bridge
 python-colorama
 python-pipenv
 python-pipx
+python-scipy
 qbittorrent
 qemu-base
 quartus-free-devinfo-cyclonev
@@ -151,10 +153,11 @@ qutebrowser
 rclone
 redis
 ripgrep
-rofi
+rofi-wayland
 rpcs3-bin
 rpi-imager
 rsync
+rucola
 rust
 rust-analyzer
 rust-wasm
@@ -170,6 +173,12 @@ sshfs
 starship
 tealdeer
 tensorflow
+texlive-binextra
+texlive-fontsextra
+texlive-fontsrecommended
+texlive-latex
+texlive-latexextra
+texlive-plaingeneric
 ticktick
 tmux
 tor-browser-bin
@@ -182,6 +191,7 @@ unarchiver
 unzip
 usbimager
 veracrypt-git
+verilator
 vesktop-bin
 vi
 vim
@@ -191,6 +201,7 @@ virtualbox-guest-iso
 vscodium-bin
 vscodium-bin-marketplace
 w3m
+waydroid
 webkit2gtk
 wezterm
 wget

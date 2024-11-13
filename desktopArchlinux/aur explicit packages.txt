@@ -14,7 +14,8 @@ grpcurl-bin
 gwe
 iriunwebcam-bin
 keystore-explorer-bin
-librespot
+libgbinder
+libglibutil
 lmstudio-appimage
 mtm-git
 mullvad-vpn-bin
@@ -24,6 +25,7 @@ nvm
 official-gamecube-controller-adapter-rules
 pandoc-bin
 python-convertdate
+python-gbinder
 python-hijri-converter
 python-holidays
 python-injector
@@ -40,12 +42,11 @@ slippi-launcher
 spicetify-cli
 ticktick
 tor-browser-bin
-turbo-base64
-ueberzugpp
 usbimager
 veracrypt-git
 vesktop-bin
 vscodium-bin
 vscodium-bin-marketplace
+waydroid
 yay
 zoom

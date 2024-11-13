@@ -16,6 +16,10 @@ flatpak list --app --columns=application | tail -n +1 >"flatpaks.txt"
 
 echo -e "saved all flatpaks to 'flatpaks.txt'\n"
 
-cp ~/scripts/spotifyPipewireVolumeControl/spotifyPipewireVolumeControlScriptWriter.py ../scripts/
+cp -r ~/scripts/spotifyPipewireVolumeControl/ ../scripts/
 
-echo "cp ~/scripts/spotifyPipewireVolumeControl/spotifyPipewireVolumeControlScriptWriter.py ../scripts/"
+echo -e "cp -r ~/scripts/spotifyPipewireVolumeControl/ ../scripts/\n"
+
+cp -r ~/scripts/spicetifyFlatpakHook/ ../scripts/
+
+echo "cp -r ~/scripts/spicetifyFlatpakHook/ ../scripts/"

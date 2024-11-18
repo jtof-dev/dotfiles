@@ -1,3 +1,3 @@
 #!/bin/bash
 
-wpctl set-volume 101 5%-
+wpctl set-volume 83 5%-

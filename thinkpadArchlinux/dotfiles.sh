@@ -16,10 +16,10 @@ flatpak list --app --columns=application | tail -n +1 >"flatpaks.txt"
 
 echo -e "saved all flatpaks to 'flatpaks.txt'\n"
 
-cp ~/scripts/thinkpadTrackpad.sh ./
+cp ~/scripts/thinkpadTrackpad.sh ../scripts/
 
-echo -e "cp ~/scripts/thinkpadTrackpad.sh ./\n"
+echo -e "cp ~/scripts/thinkpadTrackpad.sh ../scripts\n"
 
-cp ~/scripts/braveBrowserGesturesFlag.sh ./
+cp ~/scripts/braveBrowserGesturesFlag.sh ../scripts/
 
-echo -e "cp ~/scripts/braveBrowserGesturesFlag.sh ./"
+echo -e "cp ~/scripts/braveBrowserGesturesFlag.sh ../scripts/"

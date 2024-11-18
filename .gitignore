@@ -2,7 +2,12 @@
 crossPlatform/aerc/accounts.conf
 crossPlatform/aerc/accounts
 crossPlatform/aerc/scripts/*
-crossPlatform/nvim/lazy-lock.lua
 !crossPlatform/aerc/scripts/generateAccountsConf.py
 !crossPlatform/aerc/scripts/generateRefreshToken.py
 crossPlatform/nvim/lazy-lock.lua
+scripts/spicetifyFlatpakHook/.spotifyVersion
+scripts/coverLetter/input/*
+!scripts/coverLetter/input/placeholder
+scripts/coverLetter/output/*
+!scripts/coverLetter/output/placeholder
+scripts/coverLetter/data.json

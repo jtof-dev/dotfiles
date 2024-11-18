@@ -40,6 +40,7 @@ quartus-free-questa
 rpcs3-bin
 slippi-launcher
 spicetify-cli
+tdrop
 ticktick
 tor-browser-bin
 usbimager

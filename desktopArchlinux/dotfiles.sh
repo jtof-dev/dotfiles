@@ -22,4 +22,8 @@ echo -e "cp -r ~/scripts/spotifyPipewireVolumeControl/ ../scripts/\n"
 
 cp -r ~/scripts/spicetifyFlatpakHook/ ../scripts/
 
-echo "cp -r ~/scripts/spicetifyFlatpakHook/ ../scripts/"
+echo -e "cp -r ~/scripts/spicetifyFlatpakHook/ ../scripts/\n"
+
+cp -r ~/scripts/coverLetter ../scripts/
+
+echo -e "cp -r ~/scripts/coverLetter ../scripts/"

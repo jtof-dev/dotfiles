@@ -171,6 +171,7 @@ spicetify-cli
 spotifyd
 sshfs
 starship
+tdrop
 tealdeer
 tensorflow
 texlive-binextra

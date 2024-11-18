@@ -15,9 +15,7 @@ def main():
     match dotfilesOs:
         case "desktopArchlinux":
             cd @(path + "/" + dotfilesOs) && ./dotfiles.sh
-        case "mbpMacos":
-            cd @(path + "/" + dotfilesOs) && ./dotfiles.sh
-        case "mbpArchlinux":
+        case "thinkpadArchlinux":
             cd @(path + "/" + dotfilesOs) && ./dotfiles.sh
         case "unknown":
             print("\nenvironmental variable not found. is it set?\n")

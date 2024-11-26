@@ -47,6 +47,7 @@ usbimager
 veracrypt-git
 vesktop-bin
 vscodium-bin
+vscodium-bin-debug
 vscodium-bin-marketplace
 waydroid
 yay

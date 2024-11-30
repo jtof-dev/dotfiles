@@ -13,6 +13,8 @@ btrfs-progs
 chromium
 dhclient
 discordo-git
+dmidecode
+docker
 downgrade
 easyeffects
 efibootmgr
@@ -24,8 +26,11 @@ fd
 fingerprint-gui
 firefox
 flatseal
+floorp-bin
 fprintd
+fwupd
 game-devices-udev
+gcadapter-oc-dkms
 gdm
 geforcenow-electron
 gestures
@@ -89,6 +94,7 @@ libpulse
 libreoffice-fresh
 linux
 linux-firmware
+linux-headers
 loupe
 malcontent
 man-db
@@ -144,6 +150,7 @@ sof-firmware
 spicetify-cli
 starship
 steam-devices-git
+supergfxctl
 sushi
 tdrop
 tealdeer
@@ -185,6 +192,7 @@ wireless_tools
 wireplumber
 wl-clipboard
 wmctrl
+xdelta3
 xdg-desktop-portal-gnome
 xdg-user-dirs-gtk
 xdg-utils

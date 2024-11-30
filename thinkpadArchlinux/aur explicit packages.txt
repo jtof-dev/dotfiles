@@ -5,7 +5,9 @@ discordo-git
 downgrade
 fingerprint-gui
 flatseal
+floorp-bin
 game-devices-udev
+gcadapter-oc-dkms
 geforcenow-electron
 gestures
 libfprint-1
@@ -21,6 +23,7 @@ quartus-free-questa
 slippi-launcher
 spicetify-cli
 steam-devices-git
+supergfxctl
 tdrop
 thinkfan-git
 ticktick
@@ -30,7 +33,6 @@ usbimager
 veracrypt-git
 vesktop-bin
 vscodium-bin
-vscodium-bin-debug
 vscodium-bin-marketplace
 wii-u-gc-adapter
 yay

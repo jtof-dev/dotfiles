@@ -55,7 +55,13 @@ export AERC_CLIENT_SECRET={client secret}
 python ~/.config/aerc/scripts/generateRefreshToken.py
 ```
 
-- and the `generateAccountsConf.py` script uses a template college email file that gets filled out with saved information:
+- `generateRefreshToken.py` either generates or refreshes the oauth token `aerc` needs by using [this](https://jtof.dev/oauth/) redirect page for generating new token files
+
+- before this website can generate refresh tokens, it needs to be explicitly set up in google cloud
+
+  - in google cloud: create a new project and create an oauth client id in [apis & services](https://console.cloud.google.com/apis/credentials?pli=1), and add whichever website is used in the script as an authorized redirect uri
+
+- finally, the `generateAccountsConf.py` script uses a template college email file that gets filled out with saved information:
 
 ```
 [{email}]

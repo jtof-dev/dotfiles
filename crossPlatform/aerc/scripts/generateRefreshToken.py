@@ -10,7 +10,7 @@ import generateAccountsConf
 
 
 def main():
-    redirectUri = "https://oauth2.dance/"
+    redirectUri = "https://jtof.dev/oauth/"
     googleAccountsBaseUrl = "https://accounts.google.com"
 
     homeDirectory = subprocess.run(

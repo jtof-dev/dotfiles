@@ -59,7 +59,11 @@ python ~/.config/aerc/scripts/generateRefreshToken.py
 
 - before this website can generate refresh tokens, it needs to be explicitly set up in google cloud
 
-  - in google cloud: create a new project and create an oauth client id in [apis & services](https://console.cloud.google.com/apis/credentials?pli=1), and add whichever website is used in the script as an authorized redirect uri
+  - in google cloud: create a new project and create an oauth client id in [apis & services](https://console.cloud.google.com/apis/credentials?pli=1), (choose web client) and add whichever website is used in the script as an authorized redirect uri
+
+    - here you can grab the client id and secret to use in your template email file and in your `run.sh`
+
+  - lastly, go to the oauth consent screen page and set it up as external, then click the `in production` button. there will be a popup about the app needing verification, but clicking okay lets you use the app without submitting a verification
 
 - finally, the `generateAccountsConf.py` script uses a template college email file that gets filled out with saved information:
 

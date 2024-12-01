@@ -1,0 +1,19 @@
+Privacy Policy for Personal Use of Aerc Token Generator Script
+
+Effective Date: 2023-11-30
+
+This privacy policy describes how Aerc Token Generator Script (the "App") accesses and uses your personal information when you use it with your Gmail account.
+
+Information the App Accesses
+
+The App uses Google OAuth to access your Gmail account. This means the App needs permission to:
+
+View your email address and profile picture. This is necessary for authentication and to display your information within the app.
+View, send, and receive emails. This is the core functionality of any email client, allowing you to manage your emails within the app.
+How the App Uses Your Information
+
+The App uses your information solely to provide you with email client functionality. This includes:
+
+Displaying your emails.
+Allowing you to compose, send, receive, and manage emails.
+Providing a user interface that reflects your account information.

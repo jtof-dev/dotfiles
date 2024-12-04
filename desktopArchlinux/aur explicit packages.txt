@@ -10,6 +10,7 @@ cpu-x
 downgrade
 etcher-bin
 floorp-bin
+gcadapter-oc-dkms
 grpcurl-bin
 gwe
 iriunwebcam-bin
@@ -47,7 +48,6 @@ usbimager
 veracrypt-git
 vesktop-bin
 vscodium-bin
-vscodium-bin-debug
 vscodium-bin-marketplace
 waydroid
 yay

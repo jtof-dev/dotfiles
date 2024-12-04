@@ -46,11 +46,16 @@ alias pacman="sudo /sbin/pacman"
 alias pa="sudo /sbin/pacman"
 alias ps="sudo /sbin/pacman -S"
 alias pr="sudo /sbin/pacman -R"
+alias pq="sudo /sbin/pacman -Q"
+alias pqi="sudo /sbin/pacman -Qi"
 alias ys="yay -S"
 alias yr="yay -R"
+alias yq="yay -Q"
+alias yqi="yay -Qi"
+### make sure to prefix aliases about updates with 'u'
 alias up='newsboat -r && echo -e "\nPacman and AUR update\n----------------------\n" && yay -Syu && echo -e "\nFlatpak update\n---------------\n" && flatpak update && bash ~/scripts/spicetifyFlatpakHook/spotifyVersionCheck.sh && echo "\nDone!"'
-alias qp='echo -e "\nPacman and AUR update\n----------------------\n" && yay -Syu && echo -e "\nFlatpak update\n---------------\n" && flatpak update && bash ~/scripts/spicetifyFlatpakHook/spotifyVersionCheck.sh && echo "\nDone!"'
-alias yp='echo -e "\nPacman and AUR update\n----------------------\n" && yay -Syu --noconfirm && echo -e "\nFlatpak update\n---------------\n" && flatpak update -y && bash ~/scripts/spicetifyFlatpakHook/spotifyVersionCheck.sh && echo "\nDone!"'
+alias uq='echo -e "\nPacman and AUR update\n----------------------\n" && yay -Syu && echo -e "\nFlatpak update\n---------------\n" && flatpak update && bash ~/scripts/spicetifyFlatpakHook/spotifyVersionCheck.sh && echo "\nDone!"'
+alias uy='echo -e "\nPacman and AUR update\n----------------------\n" && yay -Syu --noconfirm && echo -e "\nFlatpak update\n---------------\n" && flatpak update -y && bash ~/scripts/spicetifyFlatpakHook/spotifyVersionCheck.sh && echo "\nDone!"'
 alias uc='yay -Sc --noconfirm && pacman -Qtdq --noconfirm | sudo ifne pacman -Rns - --noconfirm && echo -e "\nDone!"'
 
 ## text editors
@@ -63,12 +68,11 @@ alias sm="sudo /sbin/micro"
 alias na="nano"
 alias sn="sudo /sbin/nano"
 alias nv="nvim"
-alias nvt="NVIM_APPNAME=nvimTest nvim"
 alias sn="sudo /sbin/nvim"
 alias sv="sudo /sbin/vim"
 
 ## scripting
-alias vu="sh -c \"$(curl -sS https://raw.githubusercontent.com/Vendicated/VencordInstaller/main/install.sh)\""
+# alias vu="sh -c \"$(curl -sS https://raw.githubusercontent.com/Vendicated/VencordInstaller/main/install.sh)\""
 alias kr="kquitapp6 plasmashell && kstart plasmashell"
 alias kr5="kquitapp5 plasmashell && kstart plasmashell"
 alias sz="source ~/.zshrc"
@@ -76,8 +80,9 @@ alias ul="sudo updatedb"
 alias us="python ~/scripts/spotifyPipewireVolumeControl/spotifyPipewireVolumeControlScriptWriter.py"
 
 ## misc
-alias docker="sudo /sbin/docker"
-alias docker-compose="sudo /sbin/docker-compose"
+### 'sudo docker' sometimes breaks docker
+# alias docker="sudo /sbin/docker"
+# alias docker-compose="sudo /sbin/docker-compose"
 alias du="sudo /sbin/docker-compose up"
 alias dd="sudo /sbin/docker-compose down"
 alias mc="matlab -nodesktop"
@@ -93,9 +98,6 @@ alias gs="git status"
 alias gr="git reset --hard HEAD"
 alias bt="btop"
 alias ae="aerc"
-
-## startup
-alias kde="bash ~/scripts/startupPrograms.sh & startplasma-wayland"
 
 
 # exports

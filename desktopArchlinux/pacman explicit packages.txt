@@ -47,6 +47,7 @@ firefox
 flatpak
 floorp-bin
 fuse2
+gcadapter-oc-dkms
 gdu
 gimp
 git

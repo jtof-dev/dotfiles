@@ -141,6 +141,7 @@ playerctl
 plocate
 pnpm
 protonmail-bridge
+pyinstaller
 python-colorama
 python-pipenv
 python-pipx
@@ -162,8 +163,10 @@ rucola
 rust
 rust-analyzer
 rust-wasm
+scli-git
 screen
 sddm
+signal-cli
 signal-desktop
 slippi-launcher
 smartmontools

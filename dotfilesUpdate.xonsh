@@ -88,6 +88,9 @@ def crossPlatform():
     cp -r ~/.config/spotify-player ./crossPlatform/
     print("spotify-player config copied.")
 
+    cp ~/.config/sclirc ./crossPlatform/
+    print("sclirc copied.")
+
 
 if __name__ == "__main__":
     main()

@@ -7,7 +7,7 @@ setopt hist_ignore_all_dups
 setopt hist_reduce_blanks
 setopt inc_append_history
 setopt share_history
-setopt correct_all
+unsetopt correct_all
 unsetopt beep
 bindkey -e
 zstyle :compinstall filename "/home/andya/.zshrc"
@@ -77,7 +77,6 @@ alias kr="kquitapp6 plasmashell && kstart plasmashell"
 alias kr5="kquitapp5 plasmashell && kstart plasmashell"
 alias sz="source ~/.zshrc"
 alias ul="sudo updatedb"
-alias us="python ~/scripts/spotifyPipewireVolumeControl/spotifyPipewireVolumeControlScriptWriter.py"
 
 ## misc
 ### 'sudo docker' sometimes breaks docker
@@ -90,7 +89,7 @@ alias oc="octave --no-gui"
 alias mc="mullvad connect"
 alias md="mullvad disconnect"
 alias ms="mullvad status"
-alias spus='bash -c "sleep 5 && python ~/scripts/spotifyPipewireVolumeControl/spotifyPipewireVolumeControlScriptWriter.py" & disown && spotify_player'
+# alias spus='bash -c "sleep 5 && python ~/scripts/spotifyPipewireVolumeControl/spotifyPipewireVolumeControlScriptWriter.py" & disown && spotify_player'
 alias sp="spotify_player"
 alias lg="lazygit"
 alias gp="git pull"
@@ -107,6 +106,7 @@ export PATH="$PATH:/home/andya/.spicetify"
 export PATH="$PATH:/home/andya/.cargo/bin"
 export PATH="$PATH:/usr/local/cuda-12.4/bin"
 export PATH="$PATH:/home/andya/gitRepos/spotify-player/target/release"
+export PATH="$PATH:/home/andya/scripts/spotifyVolumeControl/dist"
 
 ## programs
 export MOZ_ENABLE_WAYLAND=1

@@ -1,0 +1,6 @@
+save-history = true
+enable-notifications = true
+notify-on-reactions = true
+use-formatting = true
+show-names = true
+color = true

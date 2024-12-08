@@ -10,3 +10,6 @@ scripts/coverLetter/input/*
 scripts/coverLetter/output/*
 !scripts/coverLetter/output/placeholder
 scripts/coverLetter/data.json
+scripts/spotifyVolumeControl/build
+scripts/spotifyVolumeControl/dist
+scripts/spotifyVolumeControl/spctl.spec

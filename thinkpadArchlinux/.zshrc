@@ -7,7 +7,7 @@ setopt hist_ignore_all_dups
 setopt hist_reduce_blanks
 setopt inc_append_history
 setopt share_history
-setopt correct_all
+unsetopt correct_all
 unsetopt beep
 bindkey -e
 zstyle :compinstall filename "/home/andya/.zshrc"
@@ -46,11 +46,15 @@ alias pacman="sudo /sbin/pacman"
 alias pa="sudo /sbin/pacman"
 alias ps="sudo /sbin/pacman -S"
 alias pr="sudo /sbin/pacman -R"
+alias pq="sudo /sbin/pacman -Q"
+alias pqi="sudo /sbin/pacman -Qi"
 alias ys="yay -S"
 alias yr="yay -R"
+alias yq="yay -Q"
+alias yqi="yay -Qi"
 alias up='newsboat -r && echo -e "\nPacman and AUR update\n----------------------\n" && yay -Syu && echo -e "\nFlatpak update\n---------------\n" && flatpak update && bash ~/scripts/spicetifyFlatpakHook/spotifyVersionCheck.sh && echo "\nDone!"'
-alias qp='echo -e "\nPacman and AUR update\n----------------------\n" && yay -Syu && echo -e "\nFlatpak update\n---------------\n" && flatpak update && bash ~/scripts/spicetifyFlatpakHook/spotifyVersionCheck.sh && echo "\nDone!"'
-alias yp='echo -e "\nPacman and AUR update\n----------------------\n" && yay -Syu --noconfirm && echo -e "\nFlatpak update\n---------------\n" && flatpak update -y && bash ~/scripts/spicetifyFlatpakHook/spotifyVersionCheck.sh && echo "\nDone!"'
+alias uq='echo -e "\nPacman and AUR update\n----------------------\n" && yay -Syu && echo -e "\nFlatpak update\n---------------\n" && flatpak update && bash ~/scripts/spicetifyFlatpakHook/spotifyVersionCheck.sh && echo "\nDone!"'
+alias uy='echo -e "\nPacman and AUR update\n----------------------\n" && yay -Syu --noconfirm && echo -e "\nFlatpak update\n---------------\n" && flatpak update -y && bash ~/scripts/spicetifyFlatpakHook/spotifyVersionCheck.sh && echo "\nDone!"'
 alias uc='yay -Sc --noconfirm && pacman -Qtdq --noconfirm | sudo ifne pacman -Rns - --noconfirm && echo -e "\nDone!"'
 
 ## text editors
@@ -67,13 +71,8 @@ alias sn="sudo /sbin/nvim"
 alias sv="sudo /sbin/vim"
 
 ## scripting
-alias vu="sh -c \"$(curl -sS https://raw.githubusercontent.com/Vendicated/VencordInstaller/main/install.sh)\""
-alias kr="kquitapp6 plasmashell && kstart plasmashell"
-alias kr5="kquitapp5 plasmashell && kstart plasmashell"
 alias sz="source ~/.zshrc"
 alias ul="sudo updatedb"
-alias us="python ~/scripts/spotifyPipewireVolumeControl/spotifyPipewireVolumeControlScriptWriter.py"
-alias ua="source ~/.config/aerc/scripts/runGenerateRefreshToken.sh"
 
 ## misc
 # alias docker="sudo /sbin/docker"
@@ -85,7 +84,7 @@ alias oc="octave --no-gui"
 alias mc="mullvad connect"
 alias md="mullvad disconnect"
 alias ms="mullvad status"
-alias spus='bash -c "sleep 5 && python ~/scripts/spotifyPipewireVolumeControl/spotifyPipewireVolumeControlScriptWriter.py" & disown && spotify_player'
+# alias spus='bash -c "sleep 5 && python ~/scripts/spotifyPipewireVolumeControl/spotifyPipewireVolumeControlScriptWriter.py" & disown && spotify_player'
 alias sp="spotify_player"
 alias lg="lazygit"
 alias gp="git pull"
@@ -105,6 +104,7 @@ export PATH="$PATH:/home/andya/.spicetify"
 export PATH="$PATH:/home/andya/.cargo/bin"
 export PATH="$PATH:/usr/local/cuda-12.4/bin"
 export PATH="$PATH:/home/andya/gitRepos/spotify-player/target/release"
+export PATH="$PATH:/home/andya/scripts/spotifyVolumeControl/dist"
 
 ## programs
 export MOZ_ENABLE_WAYLAND=1

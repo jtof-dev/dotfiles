@@ -22,4 +22,8 @@ echo -e "cp ~/scripts/thinkpadTrackpad.sh ../scripts\n"
 
 cp ~/scripts/braveBrowserGesturesFlag.sh ../scripts/
 
-echo -e "cp ~/scripts/braveBrowserGesturesFlag.sh ../scripts/"
+echo -e "cp ~/scripts/braveBrowserGesturesFlag.sh ../scripts/\n"
+
+cp ~/scripts/batteryThreshold.sh ../scripts/
+
+echo -e "cp ~/scripts/batteryThreshold.sh ../scripts/"

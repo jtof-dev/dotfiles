@@ -1,5 +1,6 @@
 1password
 1password-cli
+bat-asus-battery-bin
 brave-bin
 discordo-git
 downgrade
@@ -9,15 +10,16 @@ floorp-bin
 game-devices-udev
 gcadapter-oc-dkms
 geforcenow-electron
+geforcenow-electron-debug
 gestures
 libfprint-1
 libinput-gestures
 mtm-git
 mullvad-vpn-bin
-mullvad-vpn-bin-debug
 ncurses5-compat-libs
 official-gamecube-controller-adapter-rules
 pandoc-bin
+pandoc-bin-debug
 quartus-free-devinfo-cyclonev
 quartus-free-quartus
 quartus-free-questa

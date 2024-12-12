@@ -7,6 +7,7 @@ baobab
 base
 base-devel
 bat
+bat-asus-battery-bin
 brave-bin
 btop
 btrfs-progs

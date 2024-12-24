@@ -10,7 +10,6 @@ floorp-bin
 game-devices-udev
 gcadapter-oc-dkms
 geforcenow-electron
-geforcenow-electron-debug
 gestures
 libfprint-1
 libinput-gestures
@@ -18,8 +17,10 @@ mtm-git
 mullvad-vpn-bin
 ncurses5-compat-libs
 official-gamecube-controller-adapter-rules
+p7zip
 pandoc-bin
-pandoc-bin-debug
+perl-compress-raw-lzma
+perl-pod-markdown
 quartus-free-devinfo-cyclonev
 quartus-free-quartus
 quartus-free-questa
@@ -28,8 +29,9 @@ spicetify-cli
 steam-devices-git
 supergfxctl
 tdrop
+theos-git
+theos-ios-sdks-git
 thinkfan-git
-ticktick
 tor-browser-bin
 touche
 usbimager

@@ -116,6 +116,7 @@ export _ZO_DATA_DIR="$HOME/.local/share"
 export STARSHIP_CONFIG="$HOME/.config/starship.toml"
 export LM_LICENSE_FILE="/home/andya/gitRepos/intelQuartus/intelQuestaLicense.dat"
 export QSYS_ROOTDIR="/home/andya/.cache/yay/quartus-free/pkg/quartus-free-quartus/opt/intelFPGA/23.1/quartus/sopc_builder/bin"
+export THEOS="/opt/theos"
 
 ## scripting
 export DOTFILES_OS_CHECK="thinkpadArchlinux"

@@ -4,7 +4,7 @@
 
 ## directories
 
-- [crossPlatform](/crossPlatform/README.md)
+- [crossPlatform](crossPlatform/README.md)
 
 - [desktopArchlinux](/desktopArchlinux/README.md)
 

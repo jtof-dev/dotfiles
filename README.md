@@ -6,10 +6,10 @@
 
 - [crossPlatform](crossPlatform/README.md)
 
-- [desktopArchlinux](/desktopArchlinux/README.md)
+- [desktopArchlinux](desktopArchlinux/README.md)
 
-- [obsidianCustomizations](/obsidianCustomizations/README.md)
+- [obsidianCustomizations](obsidianCustomizations/README.md)
 
-- [scripts](/scripts/README.md)
+- [scripts](scripts/README.md)
 
-- [thinkpadArchlinux](/thinkpadArchlinux/README.md)
+- [thinkpadArchlinux](thinkpadArchlinux/README.md)

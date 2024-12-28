@@ -11,13 +11,13 @@ game-devices-udev
 gcadapter-oc-dkms
 geforcenow-electron
 gestures
+halloy-bin
 libfprint-1
 libinput-gestures
 mtm-git
 mullvad-vpn-bin
 ncurses5-compat-libs
 official-gamecube-controller-adapter-rules
-p7zip
 pandoc-bin
 perl-compress-raw-lzma
 perl-pod-markdown

@@ -19,7 +19,6 @@ return {
   { import = "astrocommunity.pack.python-ruff" },
   { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.pack.toml" },
-  { import = "astrocommunity.pack.verilog" },
   { import = "astrocommunity.pack.xml" },
   { import = "astrocommunity.pack.yaml" },
 }

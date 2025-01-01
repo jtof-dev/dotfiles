@@ -91,6 +91,9 @@ def crossPlatform():
     cp ~/.config/sclirc ./crossPlatform/
     print("sclirc copied.")
 
+    cp -r ~/scripts/aliases ./scripts/
+    print("aliases scripts copied.")
+
 
 if __name__ == "__main__":
     main()

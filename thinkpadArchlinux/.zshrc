@@ -52,10 +52,10 @@ alias ys="yay -S"
 alias yr="yay -R"
 alias yq="yay -Q"
 alias yqi="yay -Qi"
-alias up='newsboat -r && echo -e "\nPacman and AUR update\n----------------------\n" && yay -Syu && echo -e "\nFlatpak update\n---------------\n" && flatpak update && bash ~/scripts/spicetifyFlatpakHook/spotifyVersionCheck.sh && echo "\nDone!"'
-alias uq='echo -e "\nPacman and AUR update\n----------------------\n" && yay -Syu && echo -e "\nFlatpak update\n---------------\n" && flatpak update && bash ~/scripts/spicetifyFlatpakHook/spotifyVersionCheck.sh && echo "\nDone!"'
-alias uy='echo -e "\nPacman and AUR update\n----------------------\n" && yay -Syu --noconfirm && echo -e "\nFlatpak update\n---------------\n" && flatpak update -y && bash ~/scripts/spicetifyFlatpakHook/spotifyVersionCheck.sh && echo "\nDone!"'
-alias uc='yay -Sc --noconfirm && pacman -Qtdq --noconfirm | sudo ifne pacman -Rns - --noconfirm && echo -e "\nDone!"'
+alias up="bash ~/scripts/aliases/up.sh"
+alias upq="bash ~/scripts/aliases/upq.sh"
+alias upy="bash ~/scripts/aliases/upy.sh"
+alias upc="bash ~/scripts/aliases/upc.sh"
 
 ## text editors
 alias co="codium"
@@ -136,6 +136,16 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 
+## yazi
+function yy() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}
+
 ## zellij
 # if [[ -z "$ZELLIJ" && "$TERM" == "xterm-kitty" ]]; then
 #     if [[ "$ZELLIJ_AUTO_ATTACH" == "true" ]]; then
@@ -185,13 +195,3 @@ esac
 #     add-zsh-hook precmd set_tab_to_working_dir
 #     add-zsh-hook preexec set_tab_to_command_line
 # fi
-
-## yazi
-function yy() {
-	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
-	yazi "$@" --cwd-file="$tmp"
-	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
-		cd -- "$cwd"
-	fi
-	rm -f -- "$tmp"
-}

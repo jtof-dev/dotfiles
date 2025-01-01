@@ -169,6 +169,7 @@ ttf-jetbrains-mono-nerd
 ttf-montserrat
 ttf-noto-nerd
 ufw
+unified-remote-server
 usbimager
 veracrypt-git
 verilator

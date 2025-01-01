@@ -34,6 +34,7 @@ theos-ios-sdks-git
 thinkfan-git
 tor-browser-bin
 touche
+unified-remote-server
 usbimager
 veracrypt-git
 vesktop-bin

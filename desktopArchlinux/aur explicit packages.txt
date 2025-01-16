@@ -18,7 +18,6 @@ keystore-explorer-bin
 libgbinder
 libglibutil
 libsignal-client
-libsignal-client-debug
 lmstudio-appimage
 mtm-git
 mullvad-vpn-bin
@@ -28,6 +27,7 @@ nvflash
 nvm
 official-gamecube-controller-adapter-rules
 pandoc-bin
+pandoc-bin-debug
 pyinstaller
 pyinstaller-debug
 pyinstaller-hooks-contrib
@@ -50,13 +50,14 @@ scli-git
 signal-cli
 slippi-launcher
 spicetify-cli
+spicetify-cli-debug
 tdrop
-ticktick
 tor-browser-bin
 usbimager
 veracrypt-git
 vesktop-bin
 vscodium-bin
+vscodium-bin-debug
 vscodium-bin-marketplace
 waydroid
 yay

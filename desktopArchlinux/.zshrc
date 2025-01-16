@@ -53,10 +53,11 @@ alias yr="yay -R"
 alias yq="yay -Q"
 alias yqi="yay -Qi"
 ### make sure to prefix aliases about updates with 'u'
-alias up='newsboat -r && echo -e "\nPacman and AUR update\n----------------------\n" && yay -Syu && echo -e "\nFlatpak update\n---------------\n" && flatpak update && bash ~/scripts/spicetifyFlatpakHook/spotifyVersionCheck.sh && echo "\nDone!"'
-alias uq='echo -e "\nPacman and AUR update\n----------------------\n" && yay -Syu && echo -e "\nFlatpak update\n---------------\n" && flatpak update && bash ~/scripts/spicetifyFlatpakHook/spotifyVersionCheck.sh && echo "\nDone!"'
-alias uy='echo -e "\nPacman and AUR update\n----------------------\n" && yay -Syu --noconfirm && echo -e "\nFlatpak update\n---------------\n" && flatpak update -y && bash ~/scripts/spicetifyFlatpakHook/spotifyVersionCheck.sh && echo "\nDone!"'
-alias uc='yay -Sc --noconfirm && pacman -Qtdq --noconfirm | sudo ifne pacman -Rns - --noconfirm && echo -e "\nDone!"'
+alias up="bash ~/scripts/aliases/up.sh"
+alias upq="bash ~/scripts/aliases/upq.sh"
+alias upc="bash ~/scripts/aliases/upc.sh"
+alias upy="bash ~/scripts/aliases/upy.sh"
+
 
 ## text editors
 alias co="codium"
@@ -196,3 +197,6 @@ function yy() {
 	fi
 	rm -f -- "$tmp"
 }
+autoload bashcompinit
+bashcompinit
+source "/home/andya/.local/share/bash-completion/completions/am"

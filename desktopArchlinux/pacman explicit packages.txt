@@ -1,5 +1,6 @@
 1password
 1password-cli
+7zip
 aerc
 amd-ucode
 android-tools
@@ -9,11 +10,13 @@ base
 base-devel
 bat
 betterdiscordctl-git
+bind
 bottom
 brave-bin
 browsh-bin
 btop
 calcure
+calibre
 cbonsai
 certbot
 chromium
@@ -46,6 +49,7 @@ ffmpegthumbnailer
 firefox
 flatpak
 floorp-bin
+foot
 fuse2
 gcadapter-oc-dkms
 gdu
@@ -103,6 +107,7 @@ man-db
 mangohud
 maven
 mesa-demos
+meson
 micro
 mono
 moreutils
@@ -127,10 +132,11 @@ obsidian
 octave
 openssh
 otf-firamono-nerd
-p7zip
 pandoc-bin
 partitionmanager
 pass
+perl-authen-sasl
+perl-io-socket-ssl
 pika-backup
 pipewire
 pipewire-alsa
@@ -154,8 +160,8 @@ quartus-free-questa
 qutebrowser
 rclone
 redis
+reflector
 ripgrep
-rofi-wayland
 rpcs3-bin
 rpi-imager
 rsync
@@ -184,7 +190,6 @@ texlive-fontsrecommended
 texlive-latex
 texlive-latexextra
 texlive-plaingeneric
-ticktick
 tmux
 tor-browser-bin
 trash-cli
@@ -207,6 +212,7 @@ vscodium-bin
 vscodium-bin-marketplace
 w3m
 waydroid
+wayland-protocols
 webkit2gtk
 wezterm
 wget

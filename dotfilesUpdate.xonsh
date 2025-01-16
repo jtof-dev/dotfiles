@@ -76,8 +76,8 @@ def crossPlatform():
     cp ~/.tmux.conf ./crossPlatform/
     print("tmux.conf copied.")
 
-    cp -r ~/.config/yazi ./crossPlatform/
-    print("yazi config copied.")
+    # cp -r ~/.config/yazi ./crossPlatform/
+    # print("yazi config copied.")
 
     cp ~/gitRepos/gitReposUpdate.xonsh ./scripts/
     print("gitReposUpdate.py copied.")
@@ -94,6 +94,8 @@ def crossPlatform():
     cp -r ~/scripts/aliases ./scripts/
     print("aliases scripts copied.")
 
+    cp ~/scripts/reflectorMirrorUpdate.sh ./scripts/
+    print("reflectorMirrorUpdate.sh copied.")
 
 if __name__ == "__main__":
     main()

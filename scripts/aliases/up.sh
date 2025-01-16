@@ -9,6 +9,10 @@ yay -Syu
 echo -e "\n\033[1m==>\033[0m \033[97;44m flatpak update \033[0m\n"
 flatpak update
 
+echo -e "\n\033[1m==>\033[0m \033[97;44m appimage manager update \033[0m\n"
+am -s
+am -u
+
 echo -e "\n\033[1m==>\033[0m \033[97;44m 'tldr' update \033[0m\n"
 tldr --update
 

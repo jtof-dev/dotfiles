@@ -15,3 +15,9 @@
     - then, add an `icon` property with a string of `{icon pack shorthand}{capitalized name of icon}`
 
 - shrinks pinned tabs so only the icon can be seen
+
+## theme
+
+[obsidian proper dark color palette](./obsidianProperDarkBorder.json) for [obsidian border theme](https://github.com/Akifyss/obsidian-border)
+
+- directly copies proper dark's color palette, and makes best guesses for border theme's values with no analog in proper dark

@@ -79,7 +79,7 @@ alias ul="sudo updatedb"
 # alias docker-compose="sudo /sbin/docker-compose"
 alias du="sudo /sbin/docker-compose up"
 alias dd="sudo /sbin/docker-compose down"
-alias mc="matlab -nodesktop"
+alias mlc="matlab -nodesktop"
 alias oc="octave --no-gui"
 alias mc="mullvad connect"
 alias md="mullvad disconnect"
@@ -195,3 +195,6 @@ function yy() {
 #     add-zsh-hook precmd set_tab_to_working_dir
 #     add-zsh-hook preexec set_tab_to_command_line
 # fi
+autoload bashcompinit
+bashcompinit
+source "/home/andya/.local/share/bash-completion/completions/am"

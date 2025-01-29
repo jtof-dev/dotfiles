@@ -12,6 +12,7 @@ bat-asus-battery-bin
 brave-bin
 btop
 btrfs-progs
+deskreen-bin
 dhclient
 discordo-git
 dmidecode
@@ -36,6 +37,7 @@ geforcenow-electron
 gestures
 gimp
 git
+git-filter-repo
 github-cli
 glow
 gnome-backgrounds
@@ -58,6 +60,7 @@ gnome-shell
 gnome-shell-extensions
 gnome-software
 gnome-system-monitor
+gnome-themes-extra
 gnome-tweaks
 gnome-user-docs
 gnome-user-share
@@ -78,9 +81,14 @@ gvfs-smb
 gvfs-wsdd
 halloy-bin
 hyfetch
+inkscape
+inxi
 iwd
+jdk-openjdk
 jq
+kcolorchooser
 kitty
+komikku
 lazygit
 libinput-gestures
 libpulse
@@ -88,6 +96,7 @@ libreoffice-fresh
 linux
 linux-firmware
 linux-headers
+lmstudio
 loupe
 malcontent
 man-db
@@ -96,6 +105,7 @@ mtm-git
 mullvad-vpn-bin
 nano
 nautilus
+nemo
 neofetch
 neovim
 network-manager-applet
@@ -105,6 +115,7 @@ nodejs
 noto-fonts
 noto-fonts-cjk
 npm
+nvtop
 obs-studio
 obsidian
 orca
@@ -128,6 +139,7 @@ rclone
 reflector
 ripgrep
 rofi
+rpi-imager
 rsync
 rust
 rust-analyzer
@@ -168,6 +180,7 @@ ttf-firacode-nerd
 ttf-jetbrains-mono-nerd
 ttf-montserrat
 ttf-noto-nerd
+ttf-times-new-roman
 ufw
 unified-remote-server
 usbimager
@@ -182,7 +195,10 @@ vscodium-bin-marketplace
 vulkan-radeon
 w3m
 wget
+whois
 wii-u-gc-adapter
+wine
+winetricks
 wireless_tools
 wireplumber
 wl-clipboard
@@ -195,6 +211,7 @@ xdotool
 xf86-input-evdev
 xf86-video-amdgpu
 xf86-video-ati
+xf86-video-dummy
 xonsh
 xorg-server
 xorg-xinit
@@ -207,6 +224,7 @@ yt-dlp
 zellij
 zip
 zoom
+zotero-bin
 zoxide
 zram-generator
 zsh

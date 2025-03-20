@@ -10,17 +10,30 @@ def main():
         description="set the wireplumber volume change command for spotify or spotify-player"
     )
     parser.add_argument(
-        "-spapp",
-        "--spotify_desktop",
+        "-oda",
+        "--official_desktop_app",
         action="store_true",
-        help="selects the Spotify Desktop App",
+        help="selects the Spotify Desktop Program",
     )
     parser.add_argument(
-        "-spcli",
+        "-cli",
         "--spotify_cli",
         action="store_true",
-        help="selects the spotify-player cli program",
+        help="selects the spotify-player CLI Program",
     )
+    parser.add_argument(
+        "-psst",
+        "--psst_gui",
+        action="store_true",
+        help="selects the Psst Desktop Program",
+    )
+    parser.add_argument(
+        "-all",
+        "--try_all_sources",
+        action="store_true",
+        help="Tries all sources, and saves the first one found",
+    )
+
     args = parser.parse_args()
 
     volumePercent = "5"
@@ -43,16 +56,37 @@ def main():
 
 
 def getProcessNumber(processNumberCommand, args):
+    patterns = [
+        re.compile(r"(\d+)\.\s+spotify"),
+        re.compile(r"(\d+)\.\s+spotify-player"),
+        re.compile(r"(\d+)\.\s+PipeWire ALSA \[psst\-gui\]"),
+    ]
+
+    if args.official_desktop_app:
+        pattern = patterns[0]
+    elif args.spotify_cli:
+        pattern = patterns[1]
+    elif args.psst_gui:
+        pattern = patterns[2]
+    elif args.try_all_sources:
+        for pattern in patterns:
+            processNumber = matchProcessNumber(processNumberCommand, pattern)
+            if processNumber:
+                break
+        if not processNumber:
+            raise ValueError("No processes found.")
+        return processNumber
+    else:
+        raise ValueError("flag not set")
+
+    return matchProcessNumber(processNumberCommand, pattern)
+
+
+def matchProcessNumber(processNumberCommand, pattern):
     output = subprocess.run(
         processNumberCommand, shell=True, text=True, capture_output=True
     )
     # print(output.stdout)
-    if args.spotify_desktop:
-        pattern = re.compile(r"(\d+)\.\s+spotify")
-    elif args.spotify_cli:
-        pattern = re.compile(r"(\d+)\.\s+spotify-player")
-    else:
-        raise ValueError("flag not set")
 
     match = pattern.search(output.stdout)
     if match:
@@ -60,8 +94,6 @@ def getProcessNumber(processNumberCommand, args):
         # print(f"Matched text: {match.group()}")
         # print(f"Extracted number: {processNumber}")
         return processNumber
-    else:
-        print("Process not found.")
 
 
 def generateVolumeCommands(

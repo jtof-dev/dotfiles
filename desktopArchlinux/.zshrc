@@ -83,8 +83,8 @@ alias ul="sudo updatedb"
 ### 'sudo docker' sometimes breaks docker
 # alias docker="sudo /sbin/docker"
 # alias docker-compose="sudo /sbin/docker-compose"
-alias du="sudo /sbin/docker-compose up"
-alias dd="sudo /sbin/docker-compose down"
+# alias du="sudo /sbin/docker-compose up"
+# alias dd="sudo /sbin/docker-compose down"
 alias mlc="matlab -nodesktop"
 alias oc="octave --no-gui"
 alias mc="mullvad connect"
@@ -122,6 +122,8 @@ export QSYS_ROOTDIR="/home/andya/.cache/yay/quartus-free/pkg/quartus-free-quartu
 
 ## scripting
 export DOTFILES_OS_CHECK="desktopArchlinux"
+
+export LLM_KEY="AIzaSyBbR7hGLzQ0y29s-2ksh4T1YpkkUM2nm40"
 
 
 # evals

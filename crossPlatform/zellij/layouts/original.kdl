@@ -3,7 +3,7 @@ layout {
         plugin location="tab-bar"
     }
     pane
-    pane size=1 borderless=true {
+    pane size=1 borderless=false {
         plugin location="status-bar"
     }
 }

@@ -123,8 +123,6 @@ export QSYS_ROOTDIR="/home/andya/.cache/yay/quartus-free/pkg/quartus-free-quartu
 ## scripting
 export DOTFILES_OS_CHECK="desktopArchlinux"
 
-export LLM_KEY="AIzaSyBbR7hGLzQ0y29s-2ksh4T1YpkkUM2nm40"
-
 
 # evals
 eval "$(zoxide init zsh)"

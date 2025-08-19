@@ -35,3 +35,9 @@ if I want to add custom colors to `ly`:
 - this file is located at `~/.var/app/com.valvesoftware.Steam/.steam/steam/steam_dev.cfg`
 
 - [source](https://www.reddit.com/r/linux_gaming/comments/16e1l4h/slow_steam_downloads_try_this/)
+
+## wallpaper engine
+
+- there is a [kde plugin](https://github.com/slynobody/SteamOS-wallpaper-engine-kde-plugin) that adds wallpaper engine as a source for wallpapers
+
+  - follow the instructions on their github, then add the flatpak `steamapps` folder location: `~/.var/app/com.valvesoftware.Steam/data/Steam/steamapps`

@@ -92,6 +92,8 @@ alias gs="git status"
 alias gr="git reset --hard HEAD"
 alias bt="btop"
 alias ae="aerc"
+alias batterylog="python /opt/batterylog/batterylog.py"
+alias ssh="/usr/bin/mullvad-exclude /usr/bin/ssh"
 
 ## startup
 alias kde="bash ~/scripts/startupPrograms.sh & startplasma-wayland"
@@ -115,7 +117,7 @@ export ZELLIJ_AUTO_ATTACH="true"
 export _ZO_DATA_DIR="$HOME/.local/share"
 export STARSHIP_CONFIG="$HOME/.config/starship.toml"
 export LM_LICENSE_FILE="/home/andya/gitRepos/intelQuartus/intelQuestaLicense.dat"
-export QSYS_ROOTDIR="/home/andya/.cache/yay/quartus-free/pkg/quartus-free-quartus/opt/intelFPGA/23.1/quartus/sopc_builder/bin"
+export QSYS_ROOTDIR="/home/andya/.cache/yay/quartus-free/pkg/quartus-free-quartus/opt/intelFPGA/24.1/quartus/sopc_builder/bin"
 export THEOS="/opt/theos"
 
 ## scripting

@@ -1,5 +1,2 @@
-ch.protonmail.protonmail-bridge
 com.spotify.Client
-com.usebottles.bottles
 com.valvesoftware.Steam
-org.DolphinEmu.dolphin-emu

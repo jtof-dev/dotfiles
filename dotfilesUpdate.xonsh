@@ -97,5 +97,8 @@ def crossPlatform():
     cp ~/scripts/reflectorMirrorUpdate.sh ./scripts/
     print("reflectorMirrorUpdate.sh copied.")
 
+    cp -r ~/.config/rofi/ ./crossPlatform/
+    print("rofi/ copied.")
+
 if __name__ == "__main__":
     main()

@@ -4,6 +4,7 @@
 ---@type LazySpec
 return {
   "AstroNvim/astrocommunity",
+  { import = "astrocommunity.note-taking.obsidian-nvim" },
   { import = "astrocommunity.colorscheme.cyberdream-nvim" },
   { import = "astrocommunity.colorscheme.vscode-nvim" },
   { import = "astrocommunity.editing-support.multicursors-nvim" },
@@ -13,9 +14,11 @@ return {
   { import = "astrocommunity.editing-support.bigfile-nvim" },
   { import = "astrocommunity.icon.mini-icons" },
   { import = "astrocommunity.code-runner.compiler-nvim" },
-  { import = "astrocommunity.ai.kurama622-llm-nvim" },
+  -- { import = "astrocommunity.completion.codeium-nvim" },
+  -- { import = "astrocommunity.ai.kurama622-llm-nvim" },
   { import = "astrocommunity.pack.cpp" },
   { import = "astrocommunity.pack.cmake" },
+  { import = "astrocommunity.pack.harper" },
   { import = "astrocommunity.pack.html-css" },
   { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.pack.lua" },

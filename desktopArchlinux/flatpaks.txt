@@ -1,4 +1,5 @@
 com.github.tchx84.Flatseal
 com.spotify.Client
 com.valvesoftware.Steam
+net.davidotek.pupgui2
 net.rpcs3.RPCS3

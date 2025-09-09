@@ -22,7 +22,6 @@ cuda-tools
 cudnn
 dconf-editor
 ddclient
-dex
 difftastic
 dkms
 dnsmasq
@@ -33,27 +32,28 @@ droidcam
 easyeffects
 edk2-ovmf
 efibootmgr
+ente-desktop-bin
 extra-cmake-modules
 eza
 fastfetch
 fd
 ffmpegthumbnailer
-firefox
 flatpak
 fuse2
 gcadapter-oc-dkms
 gimp
 git
 github-cli
-glow
-google-chrome
-google-gemini-cli
 grpcurl
 gst-plugin-pipewire
 gtk-engine-murrine
 gtk-engines
+gvfs-mtp
+gwenview
+haruna
 hwinfo
 imagemagick
+inkscape
 iptables-nft
 isoimagewriter
 iwd
@@ -70,6 +70,7 @@ kooha
 kwalletmanager
 lazygit
 libpulse
+libreoffice-extension-writingtool
 libreoffice-fresh
 libvirt
 libxcrypt-compat
@@ -102,6 +103,7 @@ nvm
 nvtop
 obs-studio
 obsidian
+okular
 openssh
 otf-firamono-nerd
 pandoc-bin
@@ -110,6 +112,7 @@ pass
 pdfarranger
 perl-authen-sasl
 perl-io-socket-ssl
+phonon-qt6-gstreamer-git
 pika-backup
 pipewire
 pipewire-alsa
@@ -117,11 +120,9 @@ pipewire-jack
 pipewire-pulse
 plasma-framework5
 plasma-meta
-playerctl
 plocate
 pnpm
 prismlauncher
-psst-git
 pyinstaller
 python-colorama
 python-pipenv
@@ -132,10 +133,10 @@ qbittorrent
 qemu-base
 qt5-webchannel
 qt5-websockets
+rclone
 reflector
 ripgrep
 rofi-wayland
-rpi-imager
 rust
 rust-analyzer
 rust-wasm
@@ -148,7 +149,6 @@ spicetify-cli
 spotifyd
 sshfs
 starship
-stress-ng
 sunshine
 tealdeer
 texlive-binextra
@@ -157,6 +157,7 @@ texlive-fontsrecommended
 texlive-latex
 texlive-latexextra
 texlive-plaingeneric
+thorium-browser-bin
 tmux
 trash-cli
 ttf-jetbrains-mono-nerd
@@ -167,7 +168,7 @@ ufw
 unarchiver
 unzip
 uv
-v4l2loopback-dc-dkms-git
+v4l2loopback-dc-dkms
 veracrypt
 vesktop-bin
 vi
@@ -194,8 +195,6 @@ xdg-utils
 xdotool
 xonsh
 xorg-server
-xorg-xinit
-xorg-xlsclients
 yarn
 yay
 yazi
@@ -205,4 +204,3 @@ zip
 zoxide
 zram-generator
 zsh
-zsync

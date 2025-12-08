@@ -27,3 +27,7 @@ echo -e "cp -r ~/scripts/startup/ ../scripts/\n"
 cp /etc/thinkfan.conf ./
 
 echo -e "cp /etc/thinkfan.conf ./\n"
+
+cp -r ~/color-profiles/ ./
+
+echo -e "cp -r ~/color-profiles/ ./"

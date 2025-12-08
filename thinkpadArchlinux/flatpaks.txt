@@ -1,2 +1,6 @@
 com.spotify.Client
 com.valvesoftware.Steam
+dev.vencord.Vesktop
+md.obsidian.Obsidian
+net.davidotek.pupgui2
+org.signal.Signal

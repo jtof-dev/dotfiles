@@ -19,7 +19,3 @@ echo -e "saved all flatpaks to 'flatpaks.txt'\n"
 cp -r ~/scripts/spotifyVolumeControl/ ../scripts/
 
 echo -e "cp -r ~/scripts/spotifyVolumeControl/ ../scripts/\n"
-
-cp -r ~/scripts/spicetifyFlatpakHook/ ../scripts/
-
-echo -e "cp -r ~/scripts/spicetifyFlatpakHook/ ../scripts/\n"

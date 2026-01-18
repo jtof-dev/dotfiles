@@ -1,5 +1,11 @@
 com.github.tchx84.Flatseal
+com.google.Chrome
 com.spotify.Client
 com.valvesoftware.Steam
+dev.vencord.Vesktop
+io.github.webcamoid.Webcamoid
+md.obsidian.Obsidian
 net.davidotek.pupgui2
 net.rpcs3.RPCS3
+org.qbittorrent.qBittorrent
+org.signal.Signal

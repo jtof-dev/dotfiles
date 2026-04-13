@@ -1,6 +1,9 @@
+com.github.jeromerobert.pdfarranger
+com.google.Chrome
 com.spotify.Client
 com.valvesoftware.Steam
 dev.vencord.Vesktop
 md.obsidian.Obsidian
 net.davidotek.pupgui2
 org.signal.Signal
+org.videolan.VLC
